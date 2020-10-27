@@ -169,3 +169,103 @@
    ```
 
    
+
+##### 键盘录入「4个练习」：
+
+```java
+import java.util.Scanner;
+
+public class Demo12 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        int x = sc.nextInt();
+    }
+}
+```
+
+1. 输入2个整数，并求和；
+2. 输入2个整数，求最大值；
+3. 比较录入的2个整数是否相等；
+4. 输入3个整数，获取最大值；
+
+
+
+##### 选择结构语句练习:
+
+1. 录入一个成绩，判断并输出该成绩的等级；
+
+   90-100	优
+
+   80-89	  良
+
+   70-79	  中
+
+   60-69	  及
+
+   0-59		差
+
+2. 录入x的值，计算出y并输出；
+
+   x >= 3   	 y = 2 * x + 1;
+
+   -1 < x < 3  y = 2 * x;
+
+   x <= -1      y = 2 * x - 1;
+
+
+
+##### switch 语句练习
+
+1. 给定一个值，输出对应的星期几；
+
+2. 根据代码计算输出结果：
+
+   ```java
+   public class Demo13 {
+       public static void main(String[] args) {
+           int x = 2;
+           int y = 3;
+           switch(x) {
+               default:
+                   y++;                
+               case 3:
+                   y++;
+               case 4:
+                   y++;
+           }
+           System.out.println(y);
+       }
+   }
+   // 如果没有遇到 break 则里面的所有语句都要执行一次
+   // 结果应该输出 6
+   ```
+
+   ```java
+   public class Demo14 {
+       public static void main(String[] args) {
+           int x= 2;
+           int y = 3;
+           switch(x) {
+               default:
+                   y++; 
+                   break;
+               case 3:
+                   y++;
+               case 4:
+                   y++;
+           }
+           System.out.println(y);
+       }
+   }
+   // 结果应该输出 4
+   ```
+
+   
+
+##### switch 语句的注意事项:
+
+1. case 后面只能是常量而非变量，多个case后的值不能相同；
+2. default 不建议省略；位置可以任意「但是最后才会执行」，但建议在最后；
+3. break除非是最后一个，否则不建议省略
+4. switch语句的结束「遇到break; 遇到右大括号」

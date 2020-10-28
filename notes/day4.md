@@ -181,4 +181,67 @@ class Demo16 {
 
 控制调整语句练习：
 
-在控制台各输出2，7，13次 「我爱Java编程」
+在控制台只输出第2，7，13次 「我爱Java编程」
+
+
+
+#### 方法练习：
+
+1. 两数之和的方法；
+
+2. 输入2个整数，判断大小；
+
+3. 输入两个整数，判断是否相等；
+
+4. 输出星星图形，方法调用；
+
+5. 根据键盘录入的整数，输出相应的乘法表；
+
+   ```java
+   import java.util.Scanner;
+   
+   public class Demo23 {
+   
+   	public static void main(String[] args) {
+   		// TODO Auto-generated method stub
+   		// 根据键盘输入的整数，打印相应的乘法表
+   		Scanner sc = new Scanner(System.in);
+   		System.out.print("输入你要打印的乘法表的数字: ");
+   		int number = sc.nextInt();
+   		sc.close();
+   		
+   		multiTable(number);
+   	}
+   	
+   	public static void multiTable(int number) {
+   		if(number < 1) {
+   			System.out.println("你的输入有误,数字应该大于等于1!");
+   			return;
+   		}
+   		
+   		for(int i=1; i<=number; i++) {
+   			for(int j=1; j<=i; j++) {
+   				System.out.print(j + "x" + i + "=" + j*i + '\t');
+   			}
+   			System.out.println();
+   		}
+   	}
+   }
+   ```
+
+   
+
+#### 方法的重载练习
+
+在同一个类中，方法名相同，参数列表不同，与返回值类型无关。
+
+参数列表不同：
+
+* 参数个数不同
+* 参数类型不同
+* 参数的顺序不同
+
+练习：
+
+1. 求和案例「2个，3个，4个」整数；
+2. 比较数字是否相等；

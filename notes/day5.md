@@ -79,7 +79,7 @@
    String[] strArr = new String[5];
    ```
 
-   ![数组内存分配图1](/home/gux/Documents/Java2018/notes/images/数组内存分配图1.png)
+   ![数组内存分配图1](./images/数组内存分配图1.png)
 
 2. 多维数组
 
@@ -100,7 +100,7 @@
    }
    ```
 
-   ![数组内存分配图2](/home/gux/Documents/Java2018/notes/images/数组内存分配图2.png)
+   ![数组内存分配图2](./images/数组内存分配图2.png)
 
 
 

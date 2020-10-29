@@ -279,3 +279,112 @@ public class Demo6 {
 }
 ```
 
+
+
+##### 二维数组的练习
+
+1. 遍历
+
+   ```java
+   public class Demo7 {
+   
+   	public static void main(String[] args) {
+   		// TODO Auto-generated method stub
+   		// 二维数组的遍历
+   		
+   		int[][] arr = {
+   				{1, 22, 4},
+   				{-1, 21, 100, 4},
+   				{33, 99, -101, 44},
+   				{120, 111, -11, 55}
+   		};		
+   		// 输出arr的每一个元素
+   		for(int i=0; i<arr.length; i++) {
+   			for(int j=0; j<arr[i].length; j++) {
+   				System.out.print(arr[i][j] + ",");
+   			}
+   		}
+   	}
+   
+   }
+   ```
+
+   
+
+2. 求和
+
+   ```java
+   // 仅仅写出方法的代码
+   public static int sumofArray(int[][] arr) {
+       
+       int sum = 0;
+       
+       for(int i=0; i<arr.length; i++) {
+           for(int j=0; j<arr[i].length; j++) {
+               sum += arr[i][j];
+           }
+       }
+       
+       return sum;
+   }
+   ```
+
+   
+
+##### Java中的参数传递图解
+
+1. 第一种情况，不会改变内存中的值
+
+   ```java
+   public class Demo9 {
+   
+   	public static void main(String[] args) {
+   		// TODO Auto-generated method stub
+   		// 关于java参数传递的说明
+   		int a = 10;
+   		int b = 20;
+   		changeValue(a, b);		
+   	}
+   
+   	// 该方法调用完成后会弹栈，局部变量a，b随之丢弃
+   	public static void changeValue(int a, int b) {
+   		a = b;
+   		b = a + b;
+   	}
+   }
+   ```
+
+2. 会改变内存中的值
+
+   ```java
+   public class Demo10 {
+   
+   	public static void main(String[] args) {
+   		// TODO Auto-generated method stub
+   		// 参数传递问题 - 数组
+   		int[] arr = {1,2,3,4,5};
+   		// 因为数组在栈中并不存储数据本身，而是引用数据的地址，就算方法弹栈后，数据本身已经被修改了
+   		changeValueArr(arr);
+   
+   	}
+   
+   	public static void changeValueArr(int[] arr) {
+   		for(int i=0; i<arr.length; i++) {
+   			if(i==1) {
+   				arr[i] = arr[i] * 2;
+   				break;
+   			}
+   		}
+   	}
+   }
+   ```
+
+   
+
+##### 结论：
+
+1. 基本数据类型的值传递，不改变原值，因为调用后就会弹栈，局部变量随之丢弃；
+2. 引用数据类型的值传递，改变原值，因为即使方法弹栈，但是堆内存数组对象还存在，可以通过地址继续访问;
+3. Java中到底是传值还是传址「两种观点」：
+   * 既是传值，也是传址「基本数据类型传值，引用数据类型传址」；
+   * java中只有传值，因为地址也是值「java之父的观点」

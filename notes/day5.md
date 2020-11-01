@@ -379,7 +379,27 @@ public class Demo6 {
    }
    ```
 
-   
+
+
+
+> 数组需要掌握的算法：
+>
+> 1. 排序 「冒泡，快速」
+> 2. 查找 「线性， 二分法」
+
+
+
+##### 数组的工具类「常用」
+
+数组操作方法定义在 **java.util** 包下 「下面5种方法最为常用」
+
+1. equals(int[] arr, int[] brr) => boolean; 用来判断数组是否相等
+2. toString(int[] arr) => String, 把整个数组打印出来；
+3. fill(int[] arr, int value) => void, 将数据 value 填充到数组中去；
+4. sort(int[] arr) => void, 对数组进行排序；
+5. binarySearch(int[] arr, int key) => int, 对排序后的数组进行二分法检索指定的值;
+
+
 
 ##### 结论：
 

@@ -395,9 +395,9 @@ public class Demo6 {
 
 1. equals(int[] arr, int[] brr) => boolean; 用来判断数组是否相等
 2. toString(int[] arr) => String, 把整个数组打印出来；
-3. fill(int[] arr, int value) => void, 将数据 value 填充到数组中去；
+3. fill(int[] arr, int value) => void, 用value填充满一个数组「包括有数据的数组」；
 4. sort(int[] arr) => void, 对数组进行排序；
-5. binarySearch(int[] arr, int key) => int, 对排序后的数组进行二分法检索指定的值;
+5. binarySearch(int[] arr, int key) => int, 对排序后的数组进行二分法检索指定的值,返回值为该数据的索引值，如果没有该数据，则返回-11;
 
 
 

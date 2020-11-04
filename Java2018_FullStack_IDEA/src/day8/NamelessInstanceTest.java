@@ -24,11 +24,6 @@ class Phone {
     // 实际项目中,与金额有关的数据类型一定不能设置成带小数点的类型
     int price;
 
-    Phone() {
-    }
-
-    ;
-
     // 功能
     public void sendMail() {
         System.out.println("发送邮件!");

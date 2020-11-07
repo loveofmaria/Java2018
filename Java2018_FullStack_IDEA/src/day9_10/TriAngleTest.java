@@ -1,5 +1,4 @@
 package day9_10;
-
 /*
     定义 TriAngle TriAngleTest 两个类,
     其中 TriAngle 类中声明私有的底边长 base 和 高height,
@@ -21,7 +20,6 @@ public class TriAngleTest {
         tri.setHeight(8);
         System.out.println("tri: " + tri.getBaseline() + "  " + tri.getHeight());
         System.out.println("tri Area: " + tri.getArea());
-
     }
 }
 

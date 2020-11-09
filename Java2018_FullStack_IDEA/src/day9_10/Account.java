@@ -1,5 +1,8 @@
 package day9_10;
 
+/**
+ * @author Administrator
+ */
 public class Account {
     public int getId() {
         return id;

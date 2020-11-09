@@ -1,6 +1,9 @@
 package day9_10;
 
-public class TestAccountAndCustomer {
+/**
+ * @author Administrator
+ */
+class TestAccountAndCustomer {
     public static void main(String[] args) {
         Bank bank = new Bank();
         bank.addCustomer("John", "Harden");

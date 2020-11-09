@@ -1,5 +1,8 @@
 package day9_10;
 
+/**
+ * @author Administrator
+ */
 public class Customer {
     public String getFirstName() {
         return firstName;
@@ -19,8 +22,8 @@ public class Customer {
         account.displayAccount();
     }
 
-    private String firstName;
-    private String lastName;
+    private final String firstName;
+    private final String lastName;
     private Account account;
 
     public Customer(String firstName, String lastName){

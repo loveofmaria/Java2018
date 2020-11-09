@@ -1,25 +1,31 @@
 package day9_10;
 
+/**
+ * @author Administrator
+ */
 public class Bank {
-    private Customer[] customers;
+    private final Customer[] customers;
     private int numberOfCustomers;
 
-    public Bank(){
+    public Bank() {
         customers = new Customer[10];
     }
 
-    //添加客户
-    public void addCustomer(String firstName, String lastName){
-        Customer cust = new Customer(firstName, lastName);
-        customers[numberOfCustomers++] = cust;
+
+    public void addCustomer(String firstName, String lastName) {
+        //添加客户
+        Customer customer = new Customer(firstName, lastName);
+        customers[numberOfCustomers++] = customer;
     }
-    // 获取客户个数
-    public int getNumberOfCustomers(){
+
+    public int getNumberOfCustomers() {
+        // 获取客户个数
         return numberOfCustomers;
     }
-    // 获取指定位置的客户
-    public Customer getCustomer(int index){
-        if(index >= 0 && index < numberOfCustomers){
+
+    public Customer getCustomer(int index) {
+        // 获取指定位置的客户
+        if (index >= 0 && index < numberOfCustomers) {
             return customers[index];
         }
         return null;

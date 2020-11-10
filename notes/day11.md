@@ -65,6 +65,7 @@ Java只支持单继承和多层继承，不允许多重继承：
 * 一个子类只能有一个父类-【直接父类】，但是【间接父类】可以有多个【多层次继承】
 * 子类继承父类后，就获取了**直接父类以及所有间接父类中的声明的属性和方法**
 * 一个父类可以派生出多个子类
+* 父类中声明为private属性或方法，子类继承父类以后，仍然认为获取了父类当中的私有的结构，只是因为封装性的影响，使得子类不能直接调用父类的结构而已。
 
 
 
@@ -89,4 +90,25 @@ Java只支持单继承和多层继承，不允许多重继承：
 11. protected void finalize() throws Throwable { }
 
 
+
+#### 练习
+
+```java
+// 1 在CylinderTest类中创建Cylinder类的对象，设置圆柱的地面半径和高，并输出圆柱的体积
+/*
+Circle:
+-radius: double
+Circle(): 构造器，将 radius 初始化为1
++setRadius(): double
++getRadius(): double
++findArea(): double 计算圆的面积
+
+Cylinder
+-length: double
+Cylinder(): 构造器将length属性初始化为1
++setLength(double length): void
++getLength(): double
++findVolume(): double 计算圆柱体积
+*/
+```
 

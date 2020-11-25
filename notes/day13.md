@@ -99,3 +99,111 @@ public class FieldMethodTest {
 */
 ```
 
+
+
+#### 面试题
+
+多态是编译时行为还是运行时行为？如何证明？
+
+【证明见代码中的 InterViewTest.java】
+
+```java
+import java.util.Random;
+
+//面试题：多态是编译时行为还是运行时行为？
+//证明如下：
+class Animal  {
+ 
+	protected void eat() {
+		System.out.println("animal eat food");
+	}
+}
+
+class Cat  extends Animal  {
+ 
+	protected void eat() {
+		System.out.println("cat eat fish");
+	}
+}
+
+class Dog  extends Animal  {
+ 
+	public void eat() {
+		System.out.println("Dog eat bone");
+
+	}
+
+}
+
+class Sheep  extends Animal  { 
+
+	public void eat() {
+		System.out.println("Sheep eat grass");
+
+	}
+ 
+}
+
+public class InterviewTest {
+
+	public static Animal  getInstance(int key) {
+		switch (key) {
+		case 0:
+			return new Cat ();
+		case 1:
+			return new Dog ();
+		default:
+			return new Sheep ();
+		}
+
+	}
+
+	public static void main(String[] args) {
+		int key = new Random().nextInt(3);
+
+		System.out.println(key);
+
+		Animal  animal = getInstance(key);
+		
+		animal.eat();
+		 
+	}
+
+}
+```
+
+
+
+【拓展问题：InterViewTest1.java】
+
+```java
+public class InterviewTest1 {
+
+	public static void main(String[] args) {
+		Base1 base = new Sub1();
+		base.add(1, 2, 3);// sub_1,  
+
+		Sub1 s = (Sub1)base;
+		s.add(1,2,3); // sub_2, 因为确定参数的方法优先调用
+	}
+}
+
+class Base1 {
+	public void add(int a, int... arr) {
+		System.out.println("base1");
+	}
+}
+
+class Sub1 extends Base1 {
+	//重写
+	public void add(int a, int[] arr) {
+		System.out.println("sub_1");
+	}
+	//重载
+	public void add(int a, int b, int c) {
+		System.out.println("sub_2");
+	}
+
+}
+```
+

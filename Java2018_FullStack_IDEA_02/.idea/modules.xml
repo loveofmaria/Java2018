@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/day15/InnerClass/InnerClass.iml" filepath="$PROJECT_DIR$/day15/InnerClass/InnerClass.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java2018_FullStack_IDEA_02.iml" filepath="$PROJECT_DIR$/Java2018_FullStack_IDEA_02.iml" />
       <module fileurl="file://$PROJECT_DIR$/day13_02/day13_02.iml" filepath="$PROJECT_DIR$/day13_02/day13_02.iml" />
       <module fileurl="file://$PROJECT_DIR$/day13_03/day13_03.iml" filepath="$PROJECT_DIR$/day13_03/day13_03.iml" />

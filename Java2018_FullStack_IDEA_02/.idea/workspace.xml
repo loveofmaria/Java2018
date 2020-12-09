@@ -1,16 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="66bbe259-d78a-428b-ba12-69c06e53b38f" name="Default Changelist" comment="" />
+    <list default="true" id="66bbe259-d78a-428b-ba12-69c06e53b38f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/day16_catch_Exceptions/src/EcmDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day16_catch_Exceptions/src/ExceptionTest_01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day16_catch_Exceptions/src/FinallyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day16_catch_Exceptions/src/MyException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day16_catch_Exceptions/src/MyExceptionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day16_catch_Exceptions/src/ReturnExceptionDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day16_catch_Exceptions/src/ThrowsHandleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day16_catch_Exceptions/src/ThrowsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/day16_Exceptions.md" beforeDir="false" afterPath="$PROJECT_DIR$/../notes/day16_Exceptions.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1lMxRolgPR7fDECxXRe1LYFvWQt" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -18,11 +40,70 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
+  </component>
+  <component name="RunManager" selected="Application.EcmDef">
+    <configuration name="EcmDef" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="EcmDef" />
+      <module name="day16_catch_Exceptions" />
+      <option name="PROGRAM_PARAMETERS" value="20 " />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FinallyTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FinallyTest" />
+      <module name="day16_catch_Exceptions" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyException" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MyException" />
+      <module name="day16_catch_Exceptions" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReturnExceptionDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ReturnExceptionDemo" />
+      <module name="day16_catch_Exceptions" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThrowsHandleTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ThrowsHandleTest" />
+      <module name="day16_catch_Exceptions" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.EcmDef" />
+        <item itemvalue="Application.ReturnExceptionDemo" />
+        <item itemvalue="Application.MyException" />
+        <item itemvalue="Application.ThrowsHandleTest" />
+        <item itemvalue="Application.FinallyTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -33,10 +114,29 @@
       <option name="presentableId" value="Default" />
       <updated>1607420756450</updated>
       <workItem from="1607420758588" duration="817000" />
+      <workItem from="1607424371167" duration="1930000" />
+      <workItem from="1607439371248" duration="19000" />
+      <workItem from="1607477986140" duration="12000000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

@@ -1,7 +1,6 @@
 package teamView.domain.EmployeeType;
 
 import teamView.domain.interfaces.Equipment;
-import teamView.service.Status;
 
 public class Architect extends Designer {
     private int stock;
@@ -19,14 +18,10 @@ public class Architect extends Designer {
         super();
     }
 
-    public Architect(int id, String name, int age, int salary, int memberId, Status status, Equipment equipment,
+    public Architect(int id, String name, int age, int salary, Equipment equipment,
         int bonus, int stock) {
-        super(id, name, age, salary, memberId, status, equipment, bonus);
+        super(id, name, age, salary, equipment, bonus);
         this.stock = stock;
     }
 
-    public Architect(int bonus, int stock) {
-        super(bonus);
-        this.stock = stock;
-    }
 }

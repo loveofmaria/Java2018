@@ -1,4 +1,4 @@
-package teamView.domain;
+package teamView.domain.EmployeeType;
 
 public class Employee {
     private int id;
@@ -45,5 +45,11 @@ public class Employee {
         this.salary = salary;
     }
 
-    public Employee () {};
+    public Employee() {
+    };
+
+    @Override
+    public String toString() {
+        return "{\nid: " + id +  ",\nname: " + name + ",\nage: " + age + ",\nsalary: " + salary + "\n}\n";
+    }
 }

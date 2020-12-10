@@ -15,24 +15,24 @@
 
 ## 结构
 
-*   view：TeamView
+*   **view**：TeamView
 
     负责显示菜单和处理用户的操作
 
-    Data.java => 常量数据存储
+    Data.java => 常量数据存储「相当于数据库的作用」
 
-    TSUtiity.java => 通用性操作类,比如格式化时间，实现键盘访问等等
+    TSUtiity.java => 通用性操作类,比如格式化时间，获取键盘输入等等
 
-*   service：
+*   **service**：
 
     实体对象（Employee及其子类）的管理模块
 
-    *   TeamException
-    *   NameListService => 负责把Data中的数据封装到Employee[]数组中，同时提供相关操作[Employee 的方法]
-    *   TeamService
+    *   TeamException =>  自定义异常，在找不到指定员工时抛出
+    *   NameListService => 负责把Data中的数据封装到Employee[]数组中，同时提供获取与员工对象的操作[Employee 的方法]
+    *   TeamService => 负责管理成员对象，实现添加，删除等操作
     *   Status 枚举类，提供Programmer 的 status
 
-*   domain
+*   **domain**
 
     Employee及其子类等JavaBean类所在的包
 

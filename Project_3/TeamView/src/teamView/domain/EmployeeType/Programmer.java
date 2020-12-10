@@ -5,8 +5,8 @@ import teamView.service.Status;
 
 public class Programmer extends Employee implements Equipment {
 
-    private int memberId;
-    private Status status;
+    private int memberId = 23;
+    private Status status = Status.FREE;
     private Equipment equipment;
 
     @Override
@@ -39,10 +39,10 @@ public class Programmer extends Employee implements Equipment {
         this.equipment = equipment;
     }
 
-    public Programmer(int id, String name, int age, int salary, int memberId, Status status, Equipment equipment) {
+    public Programmer(int id, String name, int age, int salary, Equipment equipment) {
         super(id, name, age, salary);
-        this.memberId = memberId;
-        this.status = status;
+        this.memberId = 2;
+        this.status = Status.FREE;
         this.equipment = equipment;
     }
 

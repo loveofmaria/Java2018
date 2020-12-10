@@ -3,7 +3,7 @@ package teamVIew.view;
 import java.util.Scanner;
 
 public class TSUtility {
-    private static Scanner scanner = new Scanner(System.in);
+    private static final Scanner scanner = new Scanner(System.in);
 
     // 键盘读取通用方法[获取所有键盘输入]
     // 通过重载设置了参数的默认值 boolean = false

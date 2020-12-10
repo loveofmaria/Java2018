@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66bbe259-d78a-428b-ba12-69c06e53b38f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/day16_catch_Exceptions/src/EcmDef.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day16_catch_Exceptions/src/ExceptionTest_01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day16_catch_Exceptions/src/FinallyTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day16_catch_Exceptions/src/MyException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day16_catch_Exceptions/src/MyExceptionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day16_catch_Exceptions/src/ReturnExceptionDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day16_catch_Exceptions/src/ThrowsHandleTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day16_catch_Exceptions/src/ThrowsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../notes/day16_Exceptions.md" beforeDir="false" afterPath="$PROJECT_DIR$/../notes/day16_Exceptions.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,17 +74,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.EcmDef" />
@@ -116,7 +95,8 @@
       <workItem from="1607420758588" duration="817000" />
       <workItem from="1607424371167" duration="1930000" />
       <workItem from="1607439371248" duration="19000" />
-      <workItem from="1607477986140" duration="12000000" />
+      <workItem from="1607477986140" duration="12597000" />
+      <workItem from="1607564862151" duration="27000" />
     </task>
     <servers />
   </component>

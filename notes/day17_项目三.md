@@ -15,13 +15,15 @@
 
 ## 结构
 
-*   **view**：TeamView
+*   **view**：
 
     负责显示菜单和处理用户的操作
 
-    Data.java => 常量数据存储「相当于数据库的作用」
+    Data.java => 提供要显示的常量数据存储「相当于数据库的作用」
 
     TSUtiity.java => 通用性操作类,比如格式化时间，获取键盘输入等等
+
+    TeamView.java => 提供主界面显示及控制方法
 
 *   **service**：
 

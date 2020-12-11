@@ -40,7 +40,7 @@ public class TSUtility {
                     continue;
             }
             if (line.length() > limit) {
-                System.out.println("输入长度「不能大于" + limit + "」,请重新输入");
+                System.out.print("输入长度「不能大于" + limit + "」,请重新输入: ");
                 continue;
             }
             break;
@@ -68,6 +68,7 @@ public class TSUtility {
     public static int readInt() {
         int n  = 0;
         for(; ;) {
+            System.out.print("输入要添加的员工 ID: ");
             String  str = readKeyBoard(2);
             try {
                 n = Integer.parseInt(str);

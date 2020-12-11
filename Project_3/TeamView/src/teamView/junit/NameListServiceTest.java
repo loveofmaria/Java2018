@@ -11,16 +11,16 @@ public class NameListServiceTest {
     @Test
     public void testGetAllEmployees() throws TeamException {
         NameListService service = new NameListService();
-        Employee[] employees =  service.getAllEmployees(); 
-        for(int i=0; i<employees.length; i++) {
+        Employee[] employees = service.getAllEmployees();
+        for (int i = 0; i < employees.length; i++) {
             System.out.println(employees[i]);
-        }      
+        }
     }
 
     @Test
     public void testGetEmployee() throws TeamException {
         NameListService service = new NameListService();
-        service.getEmployee(11);               
+        System.out.println(service.getEmployee(11));
     }
 
 }

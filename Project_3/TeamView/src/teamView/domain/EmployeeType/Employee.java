@@ -1,6 +1,8 @@
 package teamView.domain.EmployeeType;
 
-public class Employee {
+import teamView.domain.interfaces.Equipment;
+
+public class Employee implements Equipment {
     private int id;
     private String name;
     private int age;
@@ -50,6 +52,12 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "{\nid: " + id +  ",\nname: " + name + ",\nage: " + age + ",\nsalary: " + salary + "\n}\n";
+        return "{\nid: " + id + ",\nname: " + name + ",\nage: " + age + ",\nsalary: " + salary + "\n}\n";
+    }
+
+    @Override
+    public String getDescription() {        
+        String display = this.getId() + "\t\t" + this.getName() + "\t\t" + this.getAge() + "\t\t" + this.getSalary() + "\t\t";
+        return display;
     }
 }

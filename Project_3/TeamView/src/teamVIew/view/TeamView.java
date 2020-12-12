@@ -80,7 +80,7 @@ public class TeamView {
 
     private void getTeam() {
         Employee[] team = teamService.getTeam();
-        System.err.println("\n---------------------------------------------------------团队成员名单---------------------------------------------------------------");
+        System.err.println("\n-----------------------------------------------------------当前团队成员名单---------------------------------------------------------------");
         if (team.length == 0) {
             System.out.println("\n\t\t\t\t\t\t\t团队中没有添加任何成员!\n");
         } else {
@@ -96,6 +96,7 @@ public class TeamView {
                 }
             }
         }
+        System.out.println("\n");
     }
 
     private void addMember() throws TeamException {

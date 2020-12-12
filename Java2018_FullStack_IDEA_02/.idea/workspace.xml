@@ -2,13 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66bbe259-d78a-428b-ba12-69c06e53b38f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Project_3/TeamView/src/teamView/junit/NameListServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Project_3/TeamView/src/teamView/junit/NameListServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Project_3/TeamView/src/teamView/service/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Project_3/TeamView/src/teamView/service/Status.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day18_multi_process/day18_multi_process.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day18_multi_process/src/MethodsInThreadTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day18_multi_process/src/ThreadDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day18_multi_process/src/ThreadTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day18_multi_process/src/TicketSellWindow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day18_multi_process/src/UnameThreadDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project_3/TeamView/src/teamVIew/view/TSUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Project_3/TeamView/src/teamVIew/view/TSUtility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project_3/TeamView/src/teamVIew/view/TeamView.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Project_3/TeamView/src/teamVIew/view/TeamView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+    <option name="PARALLEL_COMPILATION" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -36,52 +54,65 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
   </component>
-  <component name="RunManager" selected="Application.EcmDef">
-    <configuration name="EcmDef" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="EcmDef" />
-      <module name="day16_catch_Exceptions" />
-      <option name="PROGRAM_PARAMETERS" value="20 " />
+  <component name="RunManager" selected="Application.TicketSellWindow">
+    <configuration name="MethodsInThreadTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MethodsInThreadTest" />
+      <module name="day18_multi_process" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FinallyTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="FinallyTest" />
-      <module name="day16_catch_Exceptions" />
+    <configuration name="ThreadDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ThreadDemo" />
+      <module name="day18_multi_process" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyException" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MyException" />
-      <module name="day16_catch_Exceptions" />
+    <configuration name="ThreadTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ThreadTest" />
+      <module name="day18_multi_process" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReturnExceptionDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ReturnExceptionDemo" />
-      <module name="day16_catch_Exceptions" />
+    <configuration name="TicketSellWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TicketSellWindow" />
+      <module name="day18_multi_process" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThrowsHandleTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ThrowsHandleTest" />
-      <module name="day16_catch_Exceptions" />
+    <configuration name="UnameThreadDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="UnameThreadDemo" />
+      <module name="day18_multi_process" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.EcmDef" />
-        <item itemvalue="Application.ReturnExceptionDemo" />
-        <item itemvalue="Application.MyException" />
-        <item itemvalue="Application.ThrowsHandleTest" />
-        <item itemvalue="Application.FinallyTest" />
+        <item itemvalue="Application.TicketSellWindow" />
+        <item itemvalue="Application.MethodsInThreadTest" />
+        <item itemvalue="Application.UnameThreadDemo" />
+        <item itemvalue="Application.ThreadDemo" />
+        <item itemvalue="Application.ThreadTest" />
       </list>
     </recent_temporary>
   </component>
@@ -99,6 +130,9 @@
       <workItem from="1607477986140" duration="12597000" />
       <workItem from="1607564862151" duration="27000" />
       <workItem from="1607649605489" duration="81000" />
+      <workItem from="1607740567579" duration="4818000" />
+      <workItem from="1607747701012" duration="5463000" />
+      <workItem from="1607754096322" duration="6337000" />
     </task>
     <servers />
   </component>

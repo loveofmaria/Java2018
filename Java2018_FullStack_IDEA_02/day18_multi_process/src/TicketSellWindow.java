@@ -9,24 +9,28 @@ public class TicketSellWindow {
         Window window1 = new Window("窗口1");
         Window window2 = new Window("窗口2");
         Window window3 = new Window("窗口3");
+        Window window4 = new Window("窗口4");
 
         window1.start();
         window2.start();
         window3.start();
+        window4.start();
     }
 }
 
 class Window extends Thread {
-    private int ticket = 100;
+    private static int TICKETS = 100;
     Window(String name){
         super(name);
     }
+
+
     @Override
     public void run() {
         while(true) {
-            if(ticket > 0){
-                System.out.println(getName() + ": 卖票, 票号为: " + ticket);
-                ticket--;
+            if(TICKETS > 0){
+                System.out.println(getName() + ": 卖票, 票号为: " + Window.TICKETS);
+                Window.TICKETS--;
             }
             else {
                 System.out.println("票已售完.....");

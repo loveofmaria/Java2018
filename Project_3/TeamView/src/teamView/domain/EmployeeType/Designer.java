@@ -1,7 +1,6 @@
 package teamView.domain.EmployeeType;
 
 import teamView.domain.interfaces.Equipment;
-import teamView.service.Status;
 
 public class Designer extends Programmer {
     private int bonus;
@@ -24,13 +23,10 @@ public class Designer extends Programmer {
     }
 
     @Override
-    public String getDescription() {  
-        return this.getId() + "\t\t" + this.getName() 
-        + "\t\t" + this.getAge() + "\t\t" 
-        + this.getSalary() 
-        + "\t\t" + "设计师"
-        + "\t\t" + this.getStatus().getName() 
-        + "\t" + this.bonus + "\t\t" + "\t\t" + this.getEquipment().getDescription();
-    } 
+    public String getDescription() {
+        return this.getId() + "\t\t" + this.getName() + "\t\t" + this.getAge() + "\t\t" + this.getSalary() + "\t\t"
+                + "设计师" + "\t\t" + this.getStatus().getName() + "\t" + this.bonus + "\t\t" + "\t\t"
+                + this.getEquipment().getDescription();
+    }
 
 }

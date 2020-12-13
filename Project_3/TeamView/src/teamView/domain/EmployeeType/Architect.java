@@ -1,7 +1,6 @@
 package teamView.domain.EmployeeType;
 
 import teamView.domain.interfaces.Equipment;
-import teamView.service.Status;
 
 public class Architect extends Designer {
     private int stock; 

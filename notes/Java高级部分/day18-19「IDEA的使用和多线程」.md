@@ -105,7 +105,7 @@
             }
         }
         
-        PrimeRun p - new PrimeRun(143);
+        PrimeRun p = new PrimeRun(143);
         new Thread(p).start();// 第一个线程
         new Thread(p).start();// 第二个线程
         ```
@@ -234,7 +234,91 @@
         }
         ```
 
+    2.  方式二：同步方法
+    
+        如果操作共享数据的代码完整的声明在一个方法中，我们不妨将此方法声明同步的
+    
+        ```java
+        // 同步方法-把需要同步的代码块包裹在方法内部中,同步监视器就是 this
+        pvivate synchronized void show() {
+            if (ticket > 0) {
+                try {
+                    Thread.sleep(300);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                System.out.printf("[%s] - 票号: %s\n", Thread.currentThread().getName(), ticket);
+                ticket--;
+            }
+        }
         
+        // run() 方法中调用
+        @Override
+        public void run() {
+            while (true) {
+                show();
+            }
+        }
+        ```
+    
+    3.  同步方法总结：
+    
+        [如果是Runnable方式，则无需static修饰方法，如果是继承方式，那么就要使用static修饰方法]
+    
+        ```java
+        // 继承 Thread 的方式的同步方法
+        // 同步监视器是 this
+        private static synchronized void runWindow();
+        
+        // 实现 Runnable 方式的同步方法
+        // 同步监视器是 class
+        private synchronized void runWindow();
+        ```
+    
+        
+    
+        *   同步方法仍然涉及到同步监视器，只是不需要我们显示的声明
+        *   非静态的同步方法，同步监视器是 this 「当前实例」
+        *   静态的同步方法，同步监视器是：当前类本身
+    
+    4.  单例懒汉模式的线程锁示例
+    
+        ```java 
+        class Bank {
+            private Bank() {
+            }
+        
+            private static Bank instance = null;
+        	
+            // 方式一
+            public static synchronized Bank getInstance() {
+                if (instance == null) {
+                    instance = new Bank();
+                }
+                return instance;
+            }
+            
+            // 方式二
+            public static Bank getInstance() {
+                synchronized (Bank.class) {
+                    if (instance == null) {
+                    instance = new Bank();
+                }         
+               }
+                return instance;
+            }
+        }
+        ```
+    
+    5.  线程的死锁问题
+    
+        *   死锁的描述
+            *   不同的线程分别占用对方需要的同步资源不放弃，从而造成都在等待对方放弃自己需要的同步资源，就形成了线程的死锁
+            *   出现死锁后，不会出现异常，不会出现提示，只是所有的线程都处于阻塞状态，无法继续
+        *   解决方法
+            *   专门的算法和原则来规避
+            *   尽量减少同步资源的定义
+            *   尽量避免嵌套同步
 
 
 

@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66bbe259-d78a-428b-ba12-69c06e53b38f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/day18_multi_process/src/MultiThreadDay3/SynchronizedBankDemo01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day18_multi_process/src/MultiThreadDay3/ThreadDeadDemo1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day18_multi_process/src/MultiThreadDay3/WindowTestDemo01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day18_multi_process/src/MultiThreadDay3/WindowTicketDemo02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day18_multi_process/src/MultiThreadDay4/BankAccountsUseMultiThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day18_multi_process/src/MultiThreadDay4/CallableInterfaceDemo1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day18_multi_process/src/MultiThreadDay4/CommunicationBetweenThreads.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day18_multi_process/src/MultiThreadDay4/LockDemo1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day18_multi_process/src/MultiThreadDay4/ProductAndCustomerModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day18_multi_process/src/MultiThreadDay4/ThreadFirstTestInDay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day18_multi_process/src/MultiThreadDay4/ThreadSecondTestInDay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day18_multi_process/src/ThreadPoolDemo/ThreadPoolDemo01.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day18_multi_process/src/ThreadTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/day18_multi_process/src/ThreadTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../notes/Java高级部分/day18-19「IDEA的使用和多线程」.md" beforeDir="false" afterPath="$PROJECT_DIR$/../notes/Java高级部分/day18-19「IDEA的使用和多线程」.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,15 +55,15 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="RunManager" selected="Application.ThreadDeadDemo1">
-    <configuration name="TestOne" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MultiThreadDay2.TestOne" />
+  <component name="RunManager" selected="Application.ThreadPoolDemo01">
+    <configuration name="BankAccountsUseMultiThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MultiThreadDay4.BankAccountsUseMultiThread" />
       <module name="day18_multi_process" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="MultiThreadDay2.*" />
+          <option name="PATTERN" value="MultiThreadDay4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -68,12 +71,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadDeadDemo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MultiThreadDay3.ThreadDeadDemo1" />
+    <configuration name="CommunicationBetweenThreads" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MultiThreadDay4.CommunicationBetweenThreads" />
       <module name="day18_multi_process" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="MultiThreadDay3.*" />
+          <option name="PATTERN" value="MultiThreadDay4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -81,19 +84,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TicketSellWindowRunnable" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TicketSellWindowRunnable" />
-      <module name="day18_multi_process" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WindowTestDemo01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MultiThreadDay3.WindowTestDemo01" />
+    <configuration name="LockDemo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MultiThreadDay4.LockDemo1" />
       <module name="day18_multi_process" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="MultiThreadDay3.*" />
+          <option name="PATTERN" value="MultiThreadDay4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,12 +97,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WindowTicketDemo02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MultiThreadDay3.WindowTicketDemo02" />
+    <configuration name="ProductAndCustomerModel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MultiThreadDay4.ProductAndCustomerModel" />
       <module name="day18_multi_process" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="MultiThreadDay3.*" />
+          <option name="PATTERN" value="MultiThreadDay4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThreadPoolDemo01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ThreadPoolDemo.ThreadPoolDemo01" />
+      <module name="day18_multi_process" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ThreadPoolDemo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -127,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ThreadDeadDemo1" />
-        <item itemvalue="Application.WindowTestDemo01" />
-        <item itemvalue="Application.WindowTicketDemo02" />
-        <item itemvalue="Application.TicketSellWindowRunnable" />
-        <item itemvalue="Application.TestOne" />
+        <item itemvalue="Application.ThreadPoolDemo01" />
+        <item itemvalue="Application.ProductAndCustomerModel" />
+        <item itemvalue="Application.CommunicationBetweenThreads" />
+        <item itemvalue="Application.BankAccountsUseMultiThread" />
+        <item itemvalue="Application.LockDemo1" />
       </list>
     </recent_temporary>
   </component>
@@ -155,7 +164,9 @@
       <workItem from="1607821437888" duration="6634000" />
       <workItem from="1607828114073" duration="3194000" />
       <workItem from="1607847271654" duration="3706000" />
-      <workItem from="1607910777925" duration="14364000" />
+      <workItem from="1607910777925" duration="14372000" />
+      <workItem from="1607997195916" duration="23160000" />
+      <workItem from="1608088062725" duration="1782000" />
     </task>
     <servers />
   </component>

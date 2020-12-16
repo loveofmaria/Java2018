@@ -44,8 +44,30 @@
 *   **需要创建多线程的场景**
 
     *   程序需要同时执行两个或多个任务
+    
     *   程序需要实现一些需要等待的任务时，如果用户输入、文件读写操作、网络操作、搜索等等
+    
     *   需要一些后台运行的程序时
+    
+        
+
+#### 线程的分类
+
+Java中的线程分为两类:
+
+一种是守护线程；
+
+一种是用户线程；
+
+*   它们在几乎每个方面都是相同的，唯一的区别就是判断JVM何时离开
+
+*   守护线程是用来**服务用户线程**的，通过start()方法前调用 thread.setDaemon(true)可以把一个用户线程变成一个守护线程
+
+*   Java垃圾回收就是一个典型的守护线程
+
+*   若JVM中都是守护线程，当前JVM将退出
+
+    
 
 #### 线程的创建和使用
 
@@ -182,6 +204,8 @@
         *   说明
             *   线程创建时继承父线程的优先级
             *   低优先级只是获得调度的概率低，并非一定是在高优先级线程后才被调用
+    
+    
 
 #### 线程的生命周期
 
@@ -261,7 +285,7 @@
         }
         ```
     
-    3.  同步方法总结：
+    3.  **同步方法总结**：
     
         [如果是Runnable方式，则无需static修饰方法，如果是继承方式，那么就要使用static修饰方法]
     
@@ -281,7 +305,7 @@
         *   非静态的同步方法，同步监视器是 this 「当前实例」
         *   静态的同步方法，同步监视器是：当前类本身
     
-    4.  单例懒汉模式的线程锁示例
+    4.  **单例懒汉模式的线程锁示例**
     
         ```java 
         class Bank {
@@ -310,7 +334,7 @@
         }
         ```
     
-    5.  线程的死锁问题
+    5.  **线程的死锁问题**
     
         *   死锁的描述
             *   不同的线程分别占用对方需要的同步资源不放弃，从而造成都在等待对方放弃自己需要的同步资源，就形成了线程的死锁
@@ -319,30 +343,218 @@
             *   专门的算法和原则来规避
             *   尽量减少同步资源的定义
             *   尽量避免嵌套同步
-
-
+        
+    6.  **Lock[锁]**
+    
+        *   从JDK5.0开始，Java提供了更强大的线程同步机制——通过显示的定义同步锁对象来实现同步。同步锁使用Lock对象充当。
+    
+        *   java.util.concurrent.locks.Lock接口是控制多个线程对共享资源进行访问的工具。锁提供了对共享资源的独占访问，每次只能有一个线程对Lock对象加锁，线程开始访问共享资源之前应先获得Lock对象
+    
+        *   ReentrantLock 类实现了Lock，它拥有与 synchronized 相同的并发性和内存语义，在实现线程安全的控制中，比较常用的是ReentrantLock, 可以显示加锁，释放锁
+    
+            ```java
+            class WindowLock implements Runnable {
+                private int tickets = 100;
+                private ReentrantLock lock = new ReentrantLock();
+            
+                @Override
+                public void run() {
+                    // 上锁
+                    lock.lock();
+                    try {
+                        while (true) {
+                            if (tickets > 0) {
+                                try {
+                                    Thread.sleep(300);
+                                } catch (InterruptedException e) {
+                                    e.printStackTrace();
+                                }
+                                tickets--;
+                            } else {
+                                break;
+                            }
+                        }
+                    } finally {
+                        // 解锁
+                        lock.unlock();
+                    }
+            
+                }
+            }
+            
+            // synchronized 和 lock的区别
+            // lock 手动设置加锁和释放, synchronized 自动加锁和释放锁
+            // lock 只有代码块锁， synchronized 有代码块锁和方法锁
+            // 使用 Lock 锁，JVM将话费较少的时间来调度线程，性能更好。并且有更好的扩展性（提供更多的子类）
+            
+            ```
+    
+            
+    
+    7.  练习：
+    
+        ```java
+        // 银行账户，两个储户分别向同一个账户存3000，每次存1000，存3次。每次存完打印账户余额。
+        // 如何解决存在的线程安全问题
+        // 1. 明确需要多线程运行的部分
+        // 2. 明确共享部分的数据
+        // 3. 明确多线程运行代码中的需要操作共享数据的代码
+        ```
+    
+        
 
 #### 线程的通信
+
+*   wait( ) 一旦执行此方法，当前的线程就会进入阻塞状态「沉睡状态」，并且释放同步监视器「线程锁」
+*   notify( ) 一旦执行此方法，就会唤醒被 wait() 的一个线程[ 根据线程优先级 ]
+*   notifyAll( ) 一旦执行此方法，就会唤醒被 wait() 的所有线程
+*   注意点：
+    1.  上面的3种方法，只能出现在同步代码块或者同步方法中
+    2.  该三个方法的**调用者**必须是同步代码块或者同步方法的监视器「相同的对象」
+    3.  这三个方法被定义在 java.lang.Ojbect 类中
+    4.  习题：sleep() 和 wait() 的异同
+        *   相同：都可以让线程进入阻塞状态
+        *   不同：
+            1.  两个方法的声明位置不同
+            2.  调用的范围不同「一个是自由调用，一个是必须在同步代码块或者同步方法中调用」
+            3.  关于是否释放同步监视器：sleep()不会释放，wait() 会释放
+
+
+
+#### 经典例子：生产者/消费者问题
+
+*   生产者「Productor」将产品交给店员「Clerk」，而消费者「Customer」从店员处取走产品，店员一次只能持有固定数量的产品「比如：20」，如果生产者试图生产更多的产品，店员会叫生产者停一下，，如果店中有空位放置产品了在通过生产者继续生产；如果店中没有产品了，店员会告诉消费者等一下，如果店中有产品了在通知消费者来取走产品；
+*   可能出现的两个问题：
+    1.  生产者比消费者快时，消费者会漏掉一些数据没有获取到；
+    2.  消费者比生产者快时，消费者会获取到相同的数据；
+*   分析：
+    1.  是否是多线程问题 =＞　是！消费者线程和生产者线程
+    2.  是否存在线程安全问题「是否有共享数据」＝＞　是，比如店员或者产品
+    3.  解决方式　＝＞　同步及其，三种方法
+    4.  是否涉及线程间通信 => 是
 
 
 
 #### 新增线程创建方式「 JDK5.0后新增 」
 
-#### 线程的分类
+*   新增方式一：实现 Callable接口
 
-Java中的线程分为两类:
+    *   与Runnable相比，Callable功能更加强大些
 
-一种是守护线程；
+        1.  相比run( )方法，call()可以有返回值
 
-一种是用户线程；
+        2.  可以抛出异常
 
-*   它们在几乎每个方面都是相同的，唯一的区别就是判断JVM何时离开
+        3.  支持泛型的返回值
 
-*   守护线程是用来**服务用户线程**的，通过start()方法前调用 thread.setDaemon(true)可以把一个用户线程变成一个守护线程
+        4.  需要借助FutureTask类，比如获取返回结果
 
-*   Java垃圾回收就是一个典型的守护线程
+            **Future接口：**
 
-*   若JVM中都是守护线程，当前JVM将退出
+            *   可以对具体Runnable，Callalble任务的执行结果进行取消、查询是否完成，获取结果等。
+            *   FutureTask是Future接口的唯一实现
+            *   FutureTask同时实现了Runnable、Future接口，它既可以作为Runnable被线程执行，又可以作为Future得到Callable的返回值
+
+    *   避免创建大量线程时的资源耗费，影响性能，可以提前创建多个线程，放入线程池，在使用的时候直接获取，使用结束放回池中。
+    *   优点：
+        1.  提高相应速度「减少创建新线程的时间」
+        2.  降低资源消耗「重复利用池中线程，不需要每次都创建」
+        3.  便于线程管理：
+            *   corePoolSize => 核心池大小
+            *   maximumPoolSize => 最大线程数
+            *   keepAliveTime => 线程没有任务时最多保持多长时间后会终止
+            *   ......
 
     
 
+    #### 线程池相关API
+
+    *   API => ExecutorService、Executors
+
+    *   ExecutorService：真正的线程池接口。常见的子类ThreadPoolExecutor
+
+        -> void execute(Runnable command): 执行任务/命令，没有返回值，一般用来执行Runnable
+
+        -> <T>Future<T>submit(Callable<T>task): 执行任务，有返回值，一般又来执行Callable
+
+        -> void shutdown(): 关闭连接池
+
+        -> execute() 适合用于Runnable;  submit() 适合用于 Callable;
+
+    *   Executors：工具类、线程池的工厂类，用于创建并返回不同类型的线程池
+
+        *   Executors.newCachedThreadPool() 创建一个可以根据需要创建新线程的线程池
+        *   Executors.newFixedThreadPool(n) 创建一个可重用固定线程数的线程池
+        *   Executors.newSingleThreadExecutor() 创建一个只有一个线程的线程池
+        *   Executors.newScheduledThreadPool(n) 创建一个线程池，它可以安排在给定延迟后运行命令或者定期执行
+
+    *   代码
+
+        ```java
+        public class ThreadPoolDemo01 {
+            public static void main(String[] args) {
+                // 1. 提供指定线程数量的线程池
+                ExecutorService service = newFixedThreadPool(10);
+                // 获得真实的线程池类对象
+                ThreadPoolExecutor service1 = (ThreadPoolExecutor) service;
+                // 设置属性
+                service1.setCorePoolSize(15);   
+                // 2. 执行指定的线程操作，需要提供实现Runnable接口或Callable接口实现类的对象
+                service.execute(new NumberThread());
+                service.execute(new NumberThread1());
+                // 3.关闭连接池
+                service.shutdown();
+        		//  service.submit() => 适用于Callable
+            }
+        }
+        
+        // 要实现的功能
+        class NumberThread implements Runnable {
+            @Override
+            public void run() {
+                for (int i = 0; i < 100; i++) {
+                    if (i % 2 == 0) {
+                        System.out.printf("[%s] - %s\n", Thread.currentThread().getName(), i);
+                        try {
+                            Thread.sleep(300);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
+            }
+        }
+        
+        // 要实现的功能1
+        class NumberThread1 implements Runnable {
+            @Override
+            public void run() {
+                for (int i = 0; i < 100; i++) {
+                    if (i % 2 != 0) {
+                        System.out.printf("[%s] - %s\n", Thread.currentThread().getName(), i);
+                        try {
+                            Thread.sleep(300);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
+            }
+        }
+        ```
+
+        
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    

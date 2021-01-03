@@ -7,6 +7,52 @@
 3.  提供重载的构造器
 4.  调用
 
+```java
+public class TeamException extends Exception {
+    public static long Serializable = 203492384203480L;
+
+    public TeamException(String msg){
+        super(msg);
+    }
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

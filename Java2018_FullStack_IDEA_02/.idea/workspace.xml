@@ -2,16 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66bbe259-d78a-428b-ba12-69c06e53b38f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/day18_multi_process/src/MultiThreadDay4/BankAccountsUseMultiThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day18_multi_process/src/MultiThreadDay4/CallableInterfaceDemo1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day18_multi_process/src/MultiThreadDay4/CommunicationBetweenThreads.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day18_multi_process/src/MultiThreadDay4/LockDemo1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day18_multi_process/src/MultiThreadDay4/ProductAndCustomerModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day18_multi_process/src/MultiThreadDay4/ThreadFirstTestInDay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day18_multi_process/src/MultiThreadDay4/ThreadSecondTestInDay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day18_multi_process/src/ThreadPoolDemo/ThreadPoolDemo01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day18_multi_process/src/FourTypeOfThreadCreate/TypeOfImplementsCallable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day18_multi_process/src/FourTypeOfThreadCreate/TypeOfImplementsRunnable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day18_multi_process/src/FourTypeOfThreadCreate/TypeOfThreadExtends.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day18_multi_process/src/FourTypeOfThreadCreate/TypeOfThreadPool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day19/day19_standardClasses.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day19/src/StringClassTests/ContainsCountTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day19/src/StringClassTests/MyTrimTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day19/src/StringClassTests/Practice1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day19/src/StringClassTests/Practice2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day19/src/StringClassTests/ReverseStringTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day19/src/StringClassTests/StringBufferBuilderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day19/src/StringClassTests/StringTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day19/src/StringClassTests/StringTest1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day19/src/singleBankTest/Bank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../notes/Java高级部分/day18-19「IDEA的使用和多线程」.md" beforeDir="false" afterPath="$PROJECT_DIR$/../notes/Java高级部分/day18-19「IDEA的使用和多线程」.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/day16_异常_自定义异常.md" beforeDir="false" afterPath="$PROJECT_DIR$/../notes/day16_异常_自定义异常.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +51,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -55,15 +66,15 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunManager" selected="Application.ThreadPoolDemo01">
-    <configuration name="BankAccountsUseMultiThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MultiThreadDay4.BankAccountsUseMultiThread" />
-      <module name="day18_multi_process" />
+  <component name="RunManager" selected="Application.ContainsCountTest">
+    <configuration name="ContainsCountTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StringClassTests.ContainsCountTest" />
+      <module name="day19_standardClasses" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="MultiThreadDay4.*" />
+          <option name="PATTERN" value="StringClassTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -71,12 +82,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CommunicationBetweenThreads" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MultiThreadDay4.CommunicationBetweenThreads" />
-      <module name="day18_multi_process" />
+    <configuration name="MyTrimTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StringClassTests.MyTrimTest" />
+      <module name="day19_standardClasses" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="MultiThreadDay4.*" />
+          <option name="PATTERN" value="StringClassTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -84,12 +95,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LockDemo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MultiThreadDay4.LockDemo1" />
-      <module name="day18_multi_process" />
+    <configuration name="Practice1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StringClassTests.Practice1" />
+      <module name="day19_standardClasses" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="MultiThreadDay4.*" />
+          <option name="PATTERN" value="StringClassTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -97,12 +108,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductAndCustomerModel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MultiThreadDay4.ProductAndCustomerModel" />
-      <module name="day18_multi_process" />
+    <configuration name="Practice2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StringClassTests.Practice2" />
+      <module name="day19_standardClasses" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="MultiThreadDay4.*" />
+          <option name="PATTERN" value="StringClassTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -110,12 +121,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadPoolDemo01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ThreadPoolDemo.ThreadPoolDemo01" />
-      <module name="day18_multi_process" />
+    <configuration name="ReverseStringTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StringClassTests.ReverseStringTest" />
+      <module name="day19_standardClasses" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ThreadPoolDemo.*" />
+          <option name="PATTERN" value="StringClassTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,24 +134,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ThreadPoolDemo01" />
-        <item itemvalue="Application.ProductAndCustomerModel" />
-        <item itemvalue="Application.CommunicationBetweenThreads" />
-        <item itemvalue="Application.BankAccountsUseMultiThread" />
-        <item itemvalue="Application.LockDemo1" />
+        <item itemvalue="Application.ContainsCountTest" />
+        <item itemvalue="Application.ReverseStringTest" />
+        <item itemvalue="Application.MyTrimTest" />
+        <item itemvalue="Application.Practice2" />
+        <item itemvalue="Application.Practice1" />
       </list>
     </recent_temporary>
   </component>
@@ -166,7 +179,13 @@
       <workItem from="1607847271654" duration="3706000" />
       <workItem from="1607910777925" duration="14372000" />
       <workItem from="1607997195916" duration="23160000" />
-      <workItem from="1608088062725" duration="1782000" />
+      <workItem from="1608088062725" duration="8263000" />
+      <workItem from="1608142211542" duration="468000" />
+      <workItem from="1608172517265" duration="268000" />
+      <workItem from="1608608282734" duration="208000" />
+      <workItem from="1608612580543" duration="1467000" />
+      <workItem from="1609209848120" duration="5118000" />
+      <workItem from="1609637404335" duration="9768000" />
     </task>
     <servers />
   </component>
@@ -184,6 +203,16 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.util.UnknownFormatConversionException" package="java.util" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

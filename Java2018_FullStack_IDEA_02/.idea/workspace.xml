@@ -2,23 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66bbe259-d78a-428b-ba12-69c06e53b38f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/day18_multi_process/src/FourTypeOfThreadCreate/TypeOfImplementsCallable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day18_multi_process/src/FourTypeOfThreadCreate/TypeOfImplementsRunnable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day18_multi_process/src/FourTypeOfThreadCreate/TypeOfThreadExtends.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day18_multi_process/src/FourTypeOfThreadCreate/TypeOfThreadPool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day19/day19_standardClasses.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day19/src/StringClassTests/ContainsCountTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day19/src/StringClassTests/MyTrimTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day19/src/StringClassTests/Practice1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day19/src/StringClassTests/Practice2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day19/src/StringClassTests/ReverseStringTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day19/src/StringClassTests/StringBufferBuilderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day19/src/StringClassTests/StringTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day19/src/StringClassTests/StringTest1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day19/src/singleBankTest/Bank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day19/src/JavaDateModuleTest/DateTimeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day19/src/practicesString/IDEADebug.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day19/src/practicesString/StringDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day19/src/practicesString/StringDemo2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day19/src/practicesString/StringDemo3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day20_day21/day20_day21.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day20_day21/src/DateAPI/DateTimeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../notes/day16_异常_自定义异常.md" beforeDir="false" afterPath="$PROJECT_DIR$/../notes/day16_异常_自定义异常.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/day19_常用类.md" beforeDir="false" afterPath="$PROJECT_DIR$/../notes/day19_常用类.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,92 +61,104 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunManager" selected="Application.ContainsCountTest">
-    <configuration name="ContainsCountTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="StringClassTests.ContainsCountTest" />
-      <module name="day19_standardClasses" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="StringClassTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyTrimTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="StringClassTests.MyTrimTest" />
-      <module name="day19_standardClasses" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="StringClassTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Practice1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="StringClassTests.Practice1" />
-      <module name="day19_standardClasses" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="StringClassTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Practice2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="StringClassTests.Practice2" />
-      <module name="day19_standardClasses" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="StringClassTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReverseStringTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="StringClassTests.ReverseStringTest" />
-      <module name="day19_standardClasses" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="StringClassTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.DateTimeTest.testSimpleDateFormat1">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DateTimeTest.testSimpleDateFormat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day20_day21" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DateAPI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="DateAPI" />
+      <option name="MAIN_CLASS_NAME" value="DateAPI.DateTimeTest" />
+      <option name="METHOD_NAME" value="testSimpleDateFormat" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DateTimeTest.testSimpleDateFormat1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day20_day21" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DateAPI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="DateAPI" />
+      <option name="MAIN_CLASS_NAME" value="DateAPI.DateTimeTest" />
+      <option name="METHOD_NAME" value="testSimpleDateFormat1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IDEADebug" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day19_standardClasses" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="practicesString.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="practicesString" />
+      <option name="MAIN_CLASS_NAME" value="practicesString.IDEADebug" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IDEADebug.testStringBuffer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day19_standardClasses" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="practicesString.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="practicesString" />
+      <option name="MAIN_CLASS_NAME" value="practicesString.IDEADebug" />
+      <option name="METHOD_NAME" value="testStringBuffer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringDemo3.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day19_standardClasses" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="practicesString.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="practicesString" />
+      <option name="MAIN_CLASS_NAME" value="practicesString.StringDemo3" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ContainsCountTest" />
-        <item itemvalue="Application.ReverseStringTest" />
-        <item itemvalue="Application.MyTrimTest" />
-        <item itemvalue="Application.Practice2" />
-        <item itemvalue="Application.Practice1" />
+        <item itemvalue="JUnit.DateTimeTest.testSimpleDateFormat1" />
+        <item itemvalue="JUnit.DateTimeTest.testSimpleDateFormat" />
+        <item itemvalue="JUnit.IDEADebug" />
+        <item itemvalue="JUnit.IDEADebug.testStringBuffer" />
+        <item itemvalue="JUnit.StringDemo3.test" />
       </list>
     </recent_temporary>
   </component>
@@ -185,7 +190,8 @@
       <workItem from="1608608282734" duration="208000" />
       <workItem from="1608612580543" duration="1467000" />
       <workItem from="1609209848120" duration="5118000" />
-      <workItem from="1609637404335" duration="9768000" />
+      <workItem from="1609637404335" duration="12611000" />
+      <workItem from="1609722142193" duration="11926000" />
     </task>
     <servers />
   </component>
@@ -211,6 +217,21 @@
           <properties class="java.util.UnknownFormatConversionException" package="java.util" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/day19/src/practicesString/IDEADebug.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/day19/src/practicesString/IDEADebug.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/day19/src/practicesString/IDEADebug.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

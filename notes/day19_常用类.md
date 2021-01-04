@@ -8,6 +8,12 @@
 
 *   String 是一个final类，代表不可变的字符序列;
 
+    不可变性体现在:
+
+    			1. 当堆字符串重新赋值时，需要重写指定内存区域赋值，不能使用原有的value进行赋值
+       			2. 当对现有的字符串进行连接操作时，也需要重新指定内存区域赋值，不能使用原有的value赋值
+       			3. 当调用String 的 replace（）方法修改指定字符串或者字符时，也需要重新指定内存区域中新的value值
+
 *   字符串是常量，用双引号引起来表示，它们的值在创建之后不能更改;
 
 *   String对象的字符串内容是存储在一个字符数组final char[] value中的;
@@ -17,6 +23,10 @@
     ​			实现了Comparable接口: 表示String可以比较大小;
 
 *   如果拼接的结果调用intern()方法，返回值就在常量池中;
+
+*   内部定义了 final char[] value 用于存储字符串数据
+
+*   常量池中的字符串值「内容」是不能存在相同的内容「值」的，（使用equals() 比较）
 
 ##### String类及常用方法
 
@@ -140,39 +150,38 @@ String s4 = new String(char[] a,  int startIndex, int count);
 
 ##### System静态方法
 
+java.lang.System类
+
+System类提供的public static long currentTimeMills() 用来返回当前时间与1970年1月1日0时0分0秒之间以毫秒为单位的时间差,通常称为时间戳
+
+计算世界时间的主要标准有：
+
+*   UTC [ Coordinated Universal Time ]
+*   GMT [ Greenwich Mean Time ]
+*   CST [ Central Standard Time ]
+
 ##### Date类
+
+java.util.Date类「java.sql.Date 对应数据库中的日期类型的变量」
+
+***Date 类型强转为 java.sql.Date 类型编辑器不报错，但是编译报错***
+
+相互转换需要通过共同的方法getTime() 来实现 =＞　java.sql.Date dateSQL = new java.sql.Date(date.getTime())
+
+*   构造器
+    1.  Date(): 使用无参数构造器创建的对象可以获取本地当前时间
+    2.  Date(long date)
+*   常用方法
+    1.  getTime(): 返回自1970年1月1日00:00:00 GMT 以来此 Date 对象表示的毫秒数
+    2.  toString(): 把此 Date 对象转换为以下形式的 String: dow mon dd hh:mm:ss zzz yyyy 其中: dow 是一周中的某一天，zzz 是时间标准
 
 ##### Calendar类
 
-##### SimpleDateFormat类
 
 
 
-### JDK8中的新日期时间API
 
-##### LocalDate, LocalTime, LocalDateTime
-
-##### Instant
-
-##### DateTimeFormatter
-
-##### 其他类
-
-
-
-### Java比较器
-
-##### Comparable接口
-
-##### Comparable接口
-
-
-
-### System类
-
-### Math类
-
-### BigInteger与BigDecimal
+### 
 
 
 

@@ -11,8 +11,8 @@
     不可变性体现在:
 
     			1. 当堆字符串重新赋值时，需要重写指定内存区域赋值，不能使用原有的value进行赋值
-       			2. 当对现有的字符串进行连接操作时，也需要重新指定内存区域赋值，不能使用原有的value赋值
-       			3. 当调用String 的 replace（）方法修改指定字符串或者字符时，也需要重新指定内存区域中新的value值
+    			2. 当对现有的字符串进行连接操作时，也需要重新指定内存区域赋值，不能使用原有的value赋值
+    			3. 当调用String 的 replace（）方法修改指定字符串或者字符时，也需要重新指定内存区域中新的value值
 
 *   字符串是常量，用双引号引起来表示，它们的值在创建之后不能更改;
 
@@ -177,11 +177,24 @@ java.util.Date类「java.sql.Date 对应数据库中的日期类型的变量」
 
 ##### Calendar类
 
+*   Calender 类是一个抽象类，主要用于完成日期字段之间互相操作的功能
+*   获取Calender实例的方法
+    1.  Calender.getInstance()
+    2.  子类构造器 GregorianCalender
+*   一个Calender的实例是系统时间的抽象表示，通过get(int field) 方法来取得想要的时间信息，比如: YEAR, MONTH, DAY_OF_WEEK, HOUR_OF_DAY, MINUTE, SECOND
+    1.  public void set(int field, int value)
+    2.  public void add(int field, int amount)
+    3.  public final Date getTime()
+    4.  public final void setTime(Date date)
+*   注意：
+    1.  获取月份时，是从0开始表示月份，即1月是数字0
+    2.  获取星期时，从周日开始，数字从1开始
 
 
 
 
-### 
+
+ 
 
 
 

@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66bbe259-d78a-428b-ba12-69c06e53b38f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/day19/src/JavaDateModuleTest/DateTimeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day19/src/practicesString/IDEADebug.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day19/src/practicesString/StringDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day19/src/practicesString/StringDemo2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day19/src/practicesString/StringDemo3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day20_day21/day20_day21.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day20_day21/src/DateAPI/DateTimeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day20_day21/src/CalenderAPI/CalenderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day20_day21/src/CompareTest/CompareTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day20_day21/src/JDK8newDateAPI/JDK8DateTimeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day20_day21/src/SystemOperationTest/SystemOperationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day20_day21/src/DateAPI/DateTimeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/day20_day21/src/DateAPI/DateTimeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../notes/day19_常用类.md" beforeDir="false" afterPath="$PROJECT_DIR$/../notes/day19_常用类.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/day21_常用类第二部分.md" beforeDir="false" afterPath="$PROJECT_DIR$/../notes/day21_常用类第二部分.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,9 +57,9 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="JUnit.DateTimeTest.testSimpleDateFormat1">
+  <component name="RunManager" selected="JUnit.SystemOperationTest.test">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -73,79 +71,80 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DateTimeTest.testSimpleDateFormat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CompareTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="day20_day21" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="DateAPI.*" />
+          <option name="PATTERN" value="CompareTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="DateAPI" />
-      <option name="MAIN_CLASS_NAME" value="DateAPI.DateTimeTest" />
-      <option name="METHOD_NAME" value="testSimpleDateFormat" />
+      <option name="PACKAGE_NAME" value="CompareTest" />
+      <option name="MAIN_CLASS_NAME" value="CompareTest.CompareTest" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DateTimeTest.testSimpleDateFormat1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CompareTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="day20_day21" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="DateAPI.*" />
+          <option name="PATTERN" value="CompareTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="DateAPI" />
-      <option name="MAIN_CLASS_NAME" value="DateAPI.DateTimeTest" />
-      <option name="METHOD_NAME" value="testSimpleDateFormat1" />
+      <option name="PACKAGE_NAME" value="CompareTest" />
+      <option name="MAIN_CLASS_NAME" value="CompareTest.CompareTest" />
+      <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IDEADebug" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="day19_standardClasses" />
+    <configuration name="CompareTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day20_day21" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="practicesString.*" />
+          <option name="PATTERN" value="CompareTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="practicesString" />
-      <option name="MAIN_CLASS_NAME" value="practicesString.IDEADebug" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="IDEADebug.testStringBuffer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="day19_standardClasses" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="practicesString.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="practicesString" />
-      <option name="MAIN_CLASS_NAME" value="practicesString.IDEADebug" />
-      <option name="METHOD_NAME" value="testStringBuffer" />
+      <option name="PACKAGE_NAME" value="CompareTest" />
+      <option name="MAIN_CLASS_NAME" value="CompareTest.CompareTest" />
+      <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringDemo3.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="day19_standardClasses" />
+    <configuration name="JDK8DateTimeTest.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day20_day21" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="practicesString.*" />
+          <option name="PATTERN" value="JDK8newDateAPI.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="practicesString" />
-      <option name="MAIN_CLASS_NAME" value="practicesString.StringDemo3" />
+      <option name="PACKAGE_NAME" value="JDK8newDateAPI" />
+      <option name="MAIN_CLASS_NAME" value="JDK8newDateAPI.JDK8DateTimeTest" />
+      <option name="METHOD_NAME" value="test4" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SystemOperationTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day20_day21" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SystemOperationTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="SystemOperationTest" />
+      <option name="MAIN_CLASS_NAME" value="SystemOperationTest.SystemOperationTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -154,11 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DateTimeTest.testSimpleDateFormat1" />
-        <item itemvalue="JUnit.DateTimeTest.testSimpleDateFormat" />
-        <item itemvalue="JUnit.IDEADebug" />
-        <item itemvalue="JUnit.IDEADebug.testStringBuffer" />
-        <item itemvalue="JUnit.StringDemo3.test" />
+        <item itemvalue="JUnit.SystemOperationTest.test" />
+        <item itemvalue="JUnit.CompareTest.test2" />
+        <item itemvalue="JUnit.CompareTest.test1" />
+        <item itemvalue="JUnit.CompareTest.test" />
+        <item itemvalue="JUnit.JDK8DateTimeTest.test4" />
       </list>
     </recent_temporary>
   </component>
@@ -191,7 +190,9 @@
       <workItem from="1608612580543" duration="1467000" />
       <workItem from="1609209848120" duration="5118000" />
       <workItem from="1609637404335" duration="12611000" />
-      <workItem from="1609722142193" duration="11926000" />
+      <workItem from="1609722142193" duration="12866000" />
+      <workItem from="1609768618405" duration="268000" />
+      <workItem from="1609808625485" duration="12852000" />
     </task>
     <servers />
   </component>

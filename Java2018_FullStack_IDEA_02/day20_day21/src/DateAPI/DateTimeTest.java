@@ -33,5 +33,28 @@ public class DateTimeTest {
         java.sql.Date sqlDate = new java.sql.Date(timeParsed.getTime());
         System.out.println(sqlDate);
     }
+
+    @Test
+    public void testSimpleDateFormat2() throws ParseException {
+        // 三天打渔，两天晒网 1990-01-01 开始
+        // 计算在指定的某天 xxxx-xx-xx 渔夫在打鱼还是在晒网,比如 2012-12-22在干什么
+        Date beginDay = new SimpleDateFormat("yyyy-MM-dd").parse("1990-01-01");
+        Date endDay = new SimpleDateFormat("yyyy-MM-dd").parse("2012-12-22");
+        int timeOfDay = (int)((endDay.getTime() - beginDay.getTime()) / (1000*3600*24) +1);
+        int result = timeOfDay % 5;
+        switch (result) {
+            case 1:
+            case 2:
+            case 3:
+                System.out.println("在打渔");
+                break;
+            case 0:
+            case 4:
+                System.out.println("在晒网");
+                break;
+            default:
+                break;
+        }
+    }
 }
 

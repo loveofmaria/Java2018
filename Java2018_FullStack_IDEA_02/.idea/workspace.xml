@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66bbe259-d78a-428b-ba12-69c06e53b38f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/day20_day21/src/CalenderAPI/CalenderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day20_day21/src/CompareTest/CompareTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day20_day21/src/JDK8newDateAPI/JDK8DateTimeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day20_day21/src/SystemOperationTest/SystemOperationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day22_Enumeration&amp;annotation/day22_Enumeration&amp;annotation.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day22_Enumeration&amp;annotation/src/AnnotationsDemo/AnnotationsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day22_Enumeration&amp;annotation/src/EnumDemo1/EnumTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day22_Enumeration&amp;annotation/src/EnumDemo1/StuffInOffice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day22_Enumeration&amp;annotation/src/reviewOfYesterday/Demo1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day22_Enumeration&amp;annotation/src/reviewOfYesterday/SortDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day20_day21/src/DateAPI/DateTimeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/day20_day21/src/DateAPI/DateTimeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../notes/day19_常用类.md" beforeDir="false" afterPath="$PROJECT_DIR$/../notes/day19_常用类.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../notes/day21_常用类第二部分.md" beforeDir="false" afterPath="$PROJECT_DIR$/../notes/day21_常用类第二部分.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +42,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
@@ -57,9 +58,9 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunManager" selected="JUnit.SystemOperationTest.test">
+  <component name="RunManager" selected="JUnit.EnumTest.testSeasons">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -71,34 +72,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CompareTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="day20_day21" />
+    <configuration name="Demo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="reviewOfYesterday.Demo1" />
+      <module name="day22_Enumeration&amp;annotation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="CompareTest.*" />
+          <option name="PATTERN" value="reviewOfYesterday.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="CompareTest" />
-      <option name="MAIN_CLASS_NAME" value="CompareTest.CompareTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CompareTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="day20_day21" />
+    <configuration name="SortDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="reviewOfYesterday.SortDemo" />
+      <module name="day22_Enumeration&amp;annotation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="CompareTest.*" />
+          <option name="PATTERN" value="reviewOfYesterday.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="CompareTest" />
-      <option name="MAIN_CLASS_NAME" value="CompareTest.CompareTest" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -119,17 +114,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JDK8DateTimeTest.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="day20_day21" />
+    <configuration name="EnumTest.testSeasons" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day22_Enumeration&amp;annotation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="JDK8newDateAPI.*" />
+          <option name="PATTERN" value="EnumDemo1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="JDK8newDateAPI" />
-      <option name="MAIN_CLASS_NAME" value="JDK8newDateAPI.JDK8DateTimeTest" />
-      <option name="METHOD_NAME" value="test4" />
+      <option name="PACKAGE_NAME" value="EnumDemo1" />
+      <option name="MAIN_CLASS_NAME" value="EnumDemo1.EnumTest" />
+      <option name="METHOD_NAME" value="testSeasons" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -153,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SystemOperationTest.test" />
+        <item itemvalue="JUnit.EnumTest.testSeasons" />
+        <item itemvalue="Application.Demo1" />
+        <item itemvalue="Application.SortDemo" />
         <item itemvalue="JUnit.CompareTest.test2" />
-        <item itemvalue="JUnit.CompareTest.test1" />
-        <item itemvalue="JUnit.CompareTest.test" />
-        <item itemvalue="JUnit.JDK8DateTimeTest.test4" />
+        <item itemvalue="JUnit.SystemOperationTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -210,6 +205,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

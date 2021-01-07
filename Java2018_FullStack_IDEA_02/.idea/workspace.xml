@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66bbe259-d78a-428b-ba12-69c06e53b38f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/day22_Enumeration&amp;annotation/day22_Enumeration&amp;annotation.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day22_Enumeration&amp;annotation/src/AnnotationsDemo/AnnotationsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day22_Enumeration&amp;annotation/src/EnumDemo1/EnumTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day22_Enumeration&amp;annotation/src/EnumDemo1/StuffInOffice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day22_Enumeration&amp;annotation/src/reviewOfYesterday/Demo1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day22_Enumeration&amp;annotation/src/reviewOfYesterday/SortDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day22_Enumeration&amp;annotation/src/AnnotationsDemo/MyAnnotationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day23_conllection/day23_conllection.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day23_conllection/src/conllection_1/CollectionDemo1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day22_Enumeration&amp;annotation/src/AnnotationsDemo/AnnotationsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/day22_Enumeration&amp;annotation/src/AnnotationsDemo/AnnotationsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/day22_枚举与注解.md" beforeDir="false" afterPath="$PROJECT_DIR$/../notes/day22_枚举与注解.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +25,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
@@ -60,7 +60,7 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunManager" selected="JUnit.EnumTest.testSeasons">
+  <component name="RunManager" selected="JUnit.CollectionDemo1.test1">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -98,6 +98,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CollectionDemo1.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day23_conllection" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="conllection_1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="conllection_1" />
+      <option name="MAIN_CLASS_NAME" value="conllection_1.CollectionDemo1" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CompareTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="day20_day21" />
       <extension name="coverage">
@@ -130,29 +146,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SystemOperationTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="day20_day21" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="SystemOperationTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="SystemOperationTest" />
-      <option name="MAIN_CLASS_NAME" value="SystemOperationTest.SystemOperationTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CollectionDemo1.test1" />
         <item itemvalue="JUnit.EnumTest.testSeasons" />
         <item itemvalue="Application.Demo1" />
         <item itemvalue="Application.SortDemo" />
         <item itemvalue="JUnit.CompareTest.test2" />
-        <item itemvalue="JUnit.SystemOperationTest.test" />
       </list>
     </recent_temporary>
   </component>

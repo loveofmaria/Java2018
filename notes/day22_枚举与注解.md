@@ -182,4 +182,95 @@ JDK5.0开始，Java增加了对元数据 MetaData 的支持，也就是 Annotati
 
 注解 Annotation 其实就是代码里的特殊标记，这些标记可以在编译，类加载，运行时被读取，并执行相应的处理。通过Annotation，程序员可以在不改变原有逻辑的情况下，在源文件中嵌入一些补充信息。代码分析工具，开发工具和部署工具可以通过这些补充信息进行验证或者进行部署
 
-Annotation 可以像修饰符一样被使用，可以用于**修饰包，构造器，方法，成员变量，参数，局部变量的声明**，这些信息被保存在Annotation的 "name=value"对中「如同python字典的键值对
+Annotation 可以像修饰符一样被使用，可以用于**修饰包，构造器，方法，成员变量，参数，局部变量的声明**，这些信息被保存在Annotation的 "name=value"对中「如同python字典的键值对」
+
+*   JavaSE 中，注解的使用目的比较简单，但是在JavaEE/Android中，注解占据更重要的角色
+*   未来开发模式都是基于注解的，在一定程度上可以说：框架 = 注解+反射+设计模式
+
+在编译时进行格式检查( JDK内置的三个基本注解 )
+
+*   @Overrid 限定重写父类方法，只能用于方法
+*   @Deprecated  用于表示所修饰的元素（类，方法）已过时，通常是因为所修饰的结构危险或者更好的选择
+*   @SuppressWarnings 抑制编译器警告 
+
+ 
+
+#### 自定义注解
+
+*   定义新的注解类型使用关键字 @interface
+
+    ```java
+    public @interface MyAnnotationTest {
+        // 内容
+    }
+    ```
+
+*   自定义注解自动继承 java.lang.annotation.Annotation 接口
+
+*   Annotation 的成员变量在定义中以无参数方法的形式来声明，其方法名和返回值定义了该成员的名字和类型。我们称为配置参数，类型只能是八种基本数据类型，String， class， enum， Annotation及以上类型的数组
+
+*   可以在定义Annotation的成员变量时为其指定初始值，指定成员变量的初始值可以使用default关键字
+
+    ```java
+    public @interface MyAnnotationTest {
+        String value() default "Hello";
+    }
+    ```
+
+    
+
+*   如果只有一个参数成员，建议使用参数名为 value
+
+*   如果定义的注解含有配置参数，那么使用时必须指定参数值，除非它有默认值，格式为 "参数名=参数值"，如果只有一个参数成员，且名为value，可以省略”value=“
+
+    ```java
+    @MyAnnotationTest(value="值")
+    class Person {}
+    ```
+
+    
+
+*   没有成员定义的Annotation称为标记；包含成员变量的Annotation称为元数据Annotation
+
+    元注解的意思是指，这些注解是为了修饰其他注解而定义的，JDK5提供了4个标准的元注解：
+
+    1.  Retention  指定所修饰的注解的生命周期「SOURCE\CLASS 默认\RUNTIME」只有声明为RUNTIME才能通过反射获取
+
+        ```java
+        @Retention(RetentionPolicy.RUNTIME)
+        public @interface MyAnnotationTest {
+            String value() default "Hello";
+        }
+        ```
+
+        
+
+    2.  Target  指定被修饰的注解可以用来修饰那些类型结构「TYPE, FIELD, METHOD, PARAMETER, CONSTRUCTOR, LOCAL_VARIABLE」
+
+        ```java
+        @Target({ElementType.TYPE, ElementType.FIELD})
+        @Retention(RetentionPolicy.RUNTIME)
+        public @interface MyAnnotationTest {
+            String value() default "Hello";
+        }
+        ```
+
+        
+
+    3.  Documented  指定被该元注解修饰的注解类将被javadoc工具提取成文档「默认javadoc不包括注解」，定义为 Documented 注解的主机必须设置 Retention值为 RUNTIME
+
+        ```java
+        @Documented
+        @Target({ElementType.TYPE, ElementType.FIELD})
+        @Retention(RetentionPolicy.RUNTIME)
+        public @interface MyAnnotationTest {
+            String value() default "Hello";
+        }
+        ```
+
+        
+
+    4.  Inherited  使被该元注解修饰的注解修饰的类，被继承后的子类也自动拥有父类的注解
+
+    ***注意: 自定义注解必须配上注解的信息处理流程「使用反射」才有意义***
+

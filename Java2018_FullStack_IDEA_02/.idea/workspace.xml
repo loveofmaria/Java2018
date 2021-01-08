@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66bbe259-d78a-428b-ba12-69c06e53b38f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/day22_Enumeration&amp;annotation/src/AnnotationsDemo/MyAnnotationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day23_conllection/day23_conllection.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day23_conllection/src/conllection_1/CollectionDemo1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day23_conllection/src/collectionNormalMethods/CollectionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day23_conllection/src/collectionNormalMethods/IteratorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day22_Enumeration&amp;annotation/src/AnnotationsDemo/AnnotationsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/day22_Enumeration&amp;annotation/src/AnnotationsDemo/AnnotationsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../notes/day22_枚举与注解.md" beforeDir="false" afterPath="$PROJECT_DIR$/../notes/day22_枚举与注解.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/day23_集合上.md" beforeDir="false" afterPath="$PROJECT_DIR$/../notes/day23_集合上.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +57,7 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunManager" selected="JUnit.CollectionDemo1.test1">
+  <component name="RunManager" selected="JUnit.IteratorTest.test1">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -72,75 +69,81 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Demo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="reviewOfYesterday.Demo1" />
-      <module name="day22_Enumeration&amp;annotation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="reviewOfYesterday.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SortDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="reviewOfYesterday.SortDemo" />
-      <module name="day22_Enumeration&amp;annotation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="reviewOfYesterday.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CollectionDemo1.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CollectionTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="day23_conllection" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="conllection_1.*" />
+          <option name="PATTERN" value="collectionNormalMethods.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="conllection_1" />
-      <option name="MAIN_CLASS_NAME" value="conllection_1.CollectionDemo1" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CompareTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="day20_day21" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="CompareTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="CompareTest" />
-      <option name="MAIN_CLASS_NAME" value="CompareTest.CompareTest" />
+      <option name="PACKAGE_NAME" value="collectionNormalMethods" />
+      <option name="MAIN_CLASS_NAME" value="collectionNormalMethods.CollectionTest" />
       <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EnumTest.testSeasons" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="day22_Enumeration&amp;annotation" />
+    <configuration name="CollectionTest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day23_conllection" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="EnumDemo1.*" />
+          <option name="PATTERN" value="collectionNormalMethods.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="EnumDemo1" />
-      <option name="MAIN_CLASS_NAME" value="EnumDemo1.EnumTest" />
-      <option name="METHOD_NAME" value="testSeasons" />
+      <option name="PACKAGE_NAME" value="collectionNormalMethods" />
+      <option name="MAIN_CLASS_NAME" value="collectionNormalMethods.CollectionTest" />
+      <option name="METHOD_NAME" value="test3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CollectionTest.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day23_conllection" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="collectionNormalMethods.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="collectionNormalMethods" />
+      <option name="MAIN_CLASS_NAME" value="collectionNormalMethods.CollectionTest" />
+      <option name="METHOD_NAME" value="test4" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IteratorTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day23_conllection" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="collectionNormalMethods.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="collectionNormalMethods" />
+      <option name="MAIN_CLASS_NAME" value="collectionNormalMethods.IteratorTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IteratorTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day23_conllection" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="collectionNormalMethods.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="collectionNormalMethods" />
+      <option name="MAIN_CLASS_NAME" value="collectionNormalMethods.IteratorTest" />
+      <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -148,11 +151,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CollectionDemo1.test1" />
-        <item itemvalue="JUnit.EnumTest.testSeasons" />
-        <item itemvalue="Application.Demo1" />
-        <item itemvalue="Application.SortDemo" />
-        <item itemvalue="JUnit.CompareTest.test2" />
+        <item itemvalue="JUnit.IteratorTest.test1" />
+        <item itemvalue="JUnit.IteratorTest.test" />
+        <item itemvalue="JUnit.CollectionTest.test3" />
+        <item itemvalue="JUnit.CollectionTest.test4" />
+        <item itemvalue="JUnit.CollectionTest.test2" />
       </list>
     </recent_temporary>
   </component>

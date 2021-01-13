@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66bbe259-d78a-428b-ba12-69c06e53b38f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/day24_Collection_2/src/MapSubClassDemo/MapTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day24_Collection_2/src/extr/CollectionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day24_Collection_2/src/extr/CollectionTest1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day24_Collection_2/src/extr/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day24_Collection_2/src/extr/TreeSetTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day24_Collection_2/src/CollectionsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day24_Collection_2/src/PropertiesDemoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day24_Collection_2/src/extr/CountTheFirstName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day24_Collection_2/src/extr/NumberFromKeyBoradSorted.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day24_Collection_2/src/extr/PrintTop3StudentNameSortByScore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day24_Collection_2/src/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day24_Collection_2/day24_Collection_2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/day24_Collection_2/day24_Collection_2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day24_Collection_2/src/MapSubClassDemo/MapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/day24_Collection_2/src/MapSubClassDemo/MapTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../notes/day24_集合下.md" beforeDir="false" afterPath="$PROJECT_DIR$/../notes/day24_集合下.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,6 +35,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1lMxRolgPR7fDECxXRe1LYFvWQt" />
   <component name="ProjectLevelVcsManager">
@@ -62,10 +71,10 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
-  <component name="RunManager" selected="JUnit.MapTest.test">
+  <component name="RunManager" selected="Application.PrintTop3StudentNameSortByScore">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -77,8 +86,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TreeSetTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="extr.TreeSetTest" />
+    <configuration name="NumberFromKeyBoradSorted" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="extr.NumberFromKeyBoradSorted" />
       <module name="day24_Collection_2" />
       <extension name="coverage">
         <pattern>
@@ -90,7 +99,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CollectionTest1.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PrintTop3StudentNameSortByScore" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="extr.PrintTop3StudentNameSortByScore" />
       <module name="day24_Collection_2" />
       <extension name="coverage">
         <pattern>
@@ -98,31 +108,28 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="extr" />
-      <option name="MAIN_CLASS_NAME" value="extr.CollectionTest1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PropertiesDemoTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PropertiesDemoTest" />
+      <module name="day24_Collection_2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CollectionsTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day24_Collection_2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CollectionsTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CollectionTest1.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="day24_Collection_2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="extr.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="extr" />
-      <option name="MAIN_CLASS_NAME" value="extr.CollectionTest1" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MapTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MapTest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="day24_Collection_2" />
       <extension name="coverage">
         <pattern>
@@ -132,23 +139,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="MapSubClassDemo" />
       <option name="MAIN_CLASS_NAME" value="MapSubClassDemo.MapTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TreeSetTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="day24_Collection_2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="extr.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="extr" />
-      <option name="MAIN_CLASS_NAME" value="extr.TreeSetTest" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="METHOD_NAME" value="test3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -156,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MapTest.test" />
-        <item itemvalue="JUnit.CollectionTest1.test1" />
-        <item itemvalue="JUnit.CollectionTest1.test" />
-        <item itemvalue="Application.TreeSetTest" />
-        <item itemvalue="JUnit.TreeSetTest.test" />
+        <item itemvalue="Application.PrintTop3StudentNameSortByScore" />
+        <item itemvalue="JUnit.CollectionsTest.test" />
+        <item itemvalue="Application.NumberFromKeyBoradSorted" />
+        <item itemvalue="Application.PropertiesDemoTest" />
+        <item itemvalue="JUnit.MapTest.test3" />
       </list>
     </recent_temporary>
   </component>

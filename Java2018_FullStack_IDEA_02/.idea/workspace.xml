@@ -2,16 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66bbe259-d78a-428b-ba12-69c06e53b38f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/day24_Collection_2/src/CollectionsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day24_Collection_2/src/PropertiesDemoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day24_Collection_2/src/extr/CountTheFirstName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day24_Collection_2/src/extr/NumberFromKeyBoradSorted.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day24_Collection_2/src/extr/PrintTop3StudentNameSortByScore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day24_Collection_2/src/jdbc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day25_generic/day25_generic.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day25_generic/src/demo1/Citizen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day25_generic/src/demo1/Contact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day25_generic/src/demo1/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day25_generic/src/demo1/DAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day25_generic/src/demo1/GenericDemo2Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day25_generic/src/demo1/GenericDemo3Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day25_generic/src/demo1/GenericTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day25_generic/src/demo1/Info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day25_generic/src/demo1/Introduction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day25_generic/src/extr/DAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day25_generic/src/extr/EmployeesToGenericTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day24_Collection_2/src/MapSubClassDemo/MapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/day24_Collection_2/src/MapSubClassDemo/MapTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../notes/day24_集合下.md" beforeDir="false" afterPath="$PROJECT_DIR$/../notes/day24_集合下.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +78,12 @@
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
-  <component name="RunManager" selected="Application.PrintTop3StudentNameSortByScore">
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="demo1" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.DAOtest.test1">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -86,12 +95,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NumberFromKeyBoradSorted" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="extr.NumberFromKeyBoradSorted" />
-      <module name="day24_Collection_2" />
+    <configuration name="GenericDemo2Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demo1.GenericDemo2Test" />
+      <module name="day25_generic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="extr.*" />
+          <option name="PATTERN" value="demo1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -99,46 +108,64 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrintTop3StudentNameSortByScore" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="extr.PrintTop3StudentNameSortByScore" />
-      <module name="day24_Collection_2" />
+    <configuration name="DAOtest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day25_generic" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="extr.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PropertiesDemoTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="PropertiesDemoTest" />
-      <module name="day24_Collection_2" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CollectionsTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="day24_Collection_2" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CollectionsTest" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="PACKAGE_NAME" value="extr" />
+      <option name="MAIN_CLASS_NAME" value="extr.DAOtest" />
+      <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MapTest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="day24_Collection_2" />
+    <configuration name="GenericTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day25_generic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="MapSubClassDemo.*" />
+          <option name="PATTERN" value="demo1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="MapSubClassDemo" />
-      <option name="MAIN_CLASS_NAME" value="MapSubClassDemo.MapTest" />
+      <option name="PACKAGE_NAME" value="demo1" />
+      <option name="MAIN_CLASS_NAME" value="demo1.GenericTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GenericTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day25_generic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="demo1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="demo1" />
+      <option name="MAIN_CLASS_NAME" value="demo1.GenericTest" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GenericTest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day25_generic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="demo1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="demo1" />
+      <option name="MAIN_CLASS_NAME" value="demo1.GenericTest" />
       <option name="METHOD_NAME" value="test3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -147,11 +174,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PrintTop3StudentNameSortByScore" />
-        <item itemvalue="JUnit.CollectionsTest.test" />
-        <item itemvalue="Application.NumberFromKeyBoradSorted" />
-        <item itemvalue="Application.PropertiesDemoTest" />
-        <item itemvalue="JUnit.MapTest.test3" />
+        <item itemvalue="JUnit.DAOtest.test1" />
+        <item itemvalue="Application.GenericDemo2Test" />
+        <item itemvalue="JUnit.GenericTest.test3" />
+        <item itemvalue="JUnit.GenericTest.test1" />
+        <item itemvalue="JUnit.GenericTest.test2" />
       </list>
     </recent_temporary>
   </component>

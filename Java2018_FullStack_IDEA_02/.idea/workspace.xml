@@ -2,20 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66bbe259-d78a-428b-ba12-69c06e53b38f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/day25_generic/day25_generic.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day25_generic/src/demo1/Citizen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day25_generic/src/demo1/Contact.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day25_generic/src/demo1/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day25_generic/src/demo1/DAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day25_generic/src/demo1/GenericDemo2Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day25_generic/src/demo1/GenericDemo3Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day25_generic/src/demo1/GenericTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day25_generic/src/demo1/Info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day25_generic/src/demo1/Introduction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day25_generic/src/extr/DAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day25_generic/src/extr/EmployeesToGenericTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day26_File/day26_File.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day26_File/src/FileTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day26_File/src/IOoperationTest/FileStreamTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day26_File/src/exrt/CreateDeleteMultiFilesDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day26_File/src/exrt/FindJpgFilesDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day26_File/src/exrt/FolderAndFilesALLDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/Java高级部分/day18-19「IDEA的使用和多线程」.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,15 +70,18 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="demo1" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/day26_File" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.DAOtest.test1">
+  <component name="RunManager" selected="JUnit.FileStreamTest.test3">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -95,77 +93,79 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GenericDemo2Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="demo1.GenericDemo2Test" />
-      <module name="day25_generic" />
+    <configuration name="FileStreamTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day26_File" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="demo1.*" />
+          <option name="PATTERN" value="IOoperationTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="IOoperationTest" />
+      <option name="MAIN_CLASS_NAME" value="IOoperationTest.FileStreamTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DAOtest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="day25_generic" />
+    <configuration name="FileStreamTest.Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day26_File" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="extr.*" />
+          <option name="PATTERN" value="IOoperationTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="extr" />
-      <option name="MAIN_CLASS_NAME" value="extr.DAOtest" />
+      <option name="PACKAGE_NAME" value="IOoperationTest" />
+      <option name="MAIN_CLASS_NAME" value="IOoperationTest.FileStreamTest" />
+      <option name="METHOD_NAME" value="Test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileStreamTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day26_File" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="IOoperationTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="IOoperationTest" />
+      <option name="MAIN_CLASS_NAME" value="IOoperationTest.FileStreamTest" />
       <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GenericTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="day25_generic" />
+    <configuration name="FileStreamTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day26_File" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="demo1.*" />
+          <option name="PATTERN" value="IOoperationTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="demo1" />
-      <option name="MAIN_CLASS_NAME" value="demo1.GenericTest" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GenericTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="day25_generic" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="demo1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="demo1" />
-      <option name="MAIN_CLASS_NAME" value="demo1.GenericTest" />
+      <option name="PACKAGE_NAME" value="IOoperationTest" />
+      <option name="MAIN_CLASS_NAME" value="IOoperationTest.FileStreamTest" />
       <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GenericTest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="day25_generic" />
+    <configuration name="FileStreamTest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day26_File" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="demo1.*" />
+          <option name="PATTERN" value="IOoperationTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="demo1" />
-      <option name="MAIN_CLASS_NAME" value="demo1.GenericTest" />
+      <option name="PACKAGE_NAME" value="IOoperationTest" />
+      <option name="MAIN_CLASS_NAME" value="IOoperationTest.FileStreamTest" />
       <option name="METHOD_NAME" value="test3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -174,11 +174,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DAOtest.test1" />
-        <item itemvalue="Application.GenericDemo2Test" />
-        <item itemvalue="JUnit.GenericTest.test3" />
-        <item itemvalue="JUnit.GenericTest.test1" />
-        <item itemvalue="JUnit.GenericTest.test2" />
+        <item itemvalue="JUnit.FileStreamTest.test3" />
+        <item itemvalue="JUnit.FileStreamTest.test2" />
+        <item itemvalue="JUnit.FileStreamTest.test1" />
+        <item itemvalue="JUnit.FileStreamTest.Test" />
+        <item itemvalue="JUnit.FileStreamTest" />
       </list>
     </recent_temporary>
   </component>

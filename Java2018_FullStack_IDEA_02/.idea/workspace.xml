@@ -2,15 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66bbe259-d78a-428b-ba12-69c06e53b38f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/day26_File/day26_File.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day26_File/src/FileTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day26_File/src/IOoperationTest/FileStreamTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day26_File/src/exrt/CreateDeleteMultiFilesDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day26_File/src/exrt/FindJpgFilesDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day26_File/src/exrt/FolderAndFilesALLDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day26_File/count.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day26_File/index.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day26_File/src/BufferStreamTest/BufferTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day26_File/src/InputStreamReaderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day26_File/src/OtherStreamTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day26_File/src/exrt/CopyFileDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day26_File/src/exrt/CountTheWordInFileDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day26_File/src/exrt/EncryptImageDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day26_File/text1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day26_File/text_gbk.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../notes/Java高级部分/day18-19「IDEA的使用和多线程」.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day26_File/src/IOoperationTest/FileStreamTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/day26_File/src/IOoperationTest/FileStreamTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/day26_IO流.md" beforeDir="false" afterPath="$PROJECT_DIR$/../notes/day26_IO流.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,10 +83,11 @@
       <recent name="demo1" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/day26_File" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FileStreamTest.test3">
+  <component name="RunManager" selected="Application.OtherStreamTest">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -93,80 +99,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FileStreamTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CountTheWordInFileDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exrt.CountTheWordInFileDemo" />
       <module name="day26_File" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="IOoperationTest.*" />
+          <option name="PATTERN" value="exrt.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="IOoperationTest" />
-      <option name="MAIN_CLASS_NAME" value="IOoperationTest.FileStreamTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FileStreamTest.Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OtherStreamTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="OtherStreamTest" />
       <module name="day26_File" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="IOoperationTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="IOoperationTest" />
-      <option name="MAIN_CLASS_NAME" value="IOoperationTest.FileStreamTest" />
-      <option name="METHOD_NAME" value="Test" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FileStreamTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="InputStreamReaderTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="day26_File" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="IOoperationTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="IOoperationTest" />
-      <option name="MAIN_CLASS_NAME" value="IOoperationTest.FileStreamTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="InputStreamReaderTest" />
       <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FileStreamTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="InputStreamReaderTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="day26_File" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="IOoperationTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="IOoperationTest" />
-      <option name="MAIN_CLASS_NAME" value="IOoperationTest.FileStreamTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="InputStreamReaderTest" />
       <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FileStreamTest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OtherStreamTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="day26_File" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="IOoperationTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="IOoperationTest" />
-      <option name="MAIN_CLASS_NAME" value="IOoperationTest.FileStreamTest" />
-      <option name="METHOD_NAME" value="test3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="OtherStreamTest" />
+      <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -174,11 +151,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FileStreamTest.test3" />
-        <item itemvalue="JUnit.FileStreamTest.test2" />
-        <item itemvalue="JUnit.FileStreamTest.test1" />
-        <item itemvalue="JUnit.FileStreamTest.Test" />
-        <item itemvalue="JUnit.FileStreamTest" />
+        <item itemvalue="Application.OtherStreamTest" />
+        <item itemvalue="JUnit.OtherStreamTest.test1" />
+        <item itemvalue="JUnit.InputStreamReaderTest.test2" />
+        <item itemvalue="JUnit.InputStreamReaderTest.test1" />
+        <item itemvalue="Application.CountTheWordInFileDemo" />
       </list>
     </recent_temporary>
   </component>

@@ -187,13 +187,262 @@
 
 ![IO流体系图](/home/huangzheng2011/Projects/JavaProjects/Java/Java2018/notes/images/IO流体系图.png)
 
-***读写文件时要注意：非文本文件无法使用文件字符流「FileReader, FileWriter」来处理，而是需要使用文件字节流「FileInputStream, FileOutputStream 同理也不能处理文本文件」处理。***
+***读写文件时要注意：非文本文件无法使用文件字符流「FileReader, FileWriter」来处理，而是需要使用文件字节流「FileInputStream, FileOutputStream 同理也不能处理超过一个字节存储范围的文本文件」处理。***
+
+**比如：字节流可以处理文本"HelloWorld", 但是不能处理文本中: "中文"**
 
 
 
+#### 数据流
+
+***数据流的读，必须按照写的顺序，依次读取！***
+
+*   为了持久化存储Java的**基本数据类型**「存储这些变量到文件」
+
+*   ![数据流了解](/home/huangzheng2011/Projects/JavaProjects/Java/Java2018/notes/images/数据流了解.png)
+
+*   练习：将内存中的字符串、基本数据类型的变量写到文件中
+
+    ```java
+    // 写入
+    public void test5()  {
+            try {
+                DataOutputStream dos = new DataOutputStream(new FileOutputStream("data.txt"));
+    
+                try {
+                    dos.writeUTF("妖媚");
+                    dos.flush();
+                    dos.writeInt(20);
+                    dos.flush();
+                    dos.writeChar('男');
+                    dos.flush();
+                    dos.writeBoolean(true);
+                    dos.flush();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                } finally {
+                    try {
+                        dos.close();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+    
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            }
+        }
+    // 读取「必须按照写的顺序」
+     public void test6(){
+            try {
+                DataInputStream dis = new DataInputStream(new FileInputStream("data.txt"));
+                try {
+                    // 按照写的顺序依次读取
+                    String name = dis.readUTF();
+                    int age = dis.readInt();
+                    char gender = dis.readChar();
+                    boolean status = dis.readBoolean();
+    
+                    System.out.println("Name:" + name + "\n"
+                    + "Aage: " + age + "\n"
+                            + "Gender: " + gender + "\n"
+                            + "Stuff: " + status
+                    );
+                } catch (IOException e) {
+                    e.printStackTrace();
+                } finally {
+                    try {
+                        dis.close();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            }
+        }
+    ```
 
 
 
+#### 缓冲流
+
+***「实际开发中，对于文件的读写都是使用缓冲流，因为比字节流文件读写效率更高」***
+
+*   BufferedInputStream
+
+    BufferedOutputStream
+
+    BufferedReader
+
+    BufferedWriter
+
+```java
+FileInputStream fis = null;
+FileOutputStream fos = null;
+
+BufferedInputStream bis = new BufferedInputStream(fis);
+BufferedOutputStream bos = new BufferedOutputStream(fos);
+
+// 关闭顺序
+bos.close();
+bis.close();
+// 这里是自动关闭的,无需手动关闭
+fos.close();
+fis.close();
+```
+
+练习：
+
+```java
+// 1. 分别使用节点流：FileInputStream、FileOutputStream和缓冲流：BufferInputStream、BufferOutputStream实现文本文件/图片/视频文件的赋值，并比较数据复制的效率
+// 节点流复制一个大小为 28.3MB的文件时间需要 10254 毫秒
+// 							缓冲流需要 312 毫秒
+// 2. 实现图片加密操作；提示：
+        int b = 0;
+        while((b = fis.read()) != -1){
+            fos.write(b ^ 5);
+        }
+// 3. 获取文本上每个字符出现的次数，提示：遍历文本的每一个字符；字符及出现的次数保存在Map中；将Map中数据写入文件
+```
+
+
+
+#### 转换流
+
+***「根据后缀命名规则看：数据字符流」***
+
+```java
+// 一个utf8转换为GBK文件的示例
+public void test2() {
+    // 创建操作对象
+        File file1 = new File("text1.txt");
+        File file2 = new File("text_gbk.txt");
+        FileOutputStream fos = null;
+        InputStreamReader isr = null;
+        OutputStreamWriter osw = null;
+        FileInputStream fis = null;
+        try {
+            fis = new FileInputStream(file1);
+            fos = new FileOutputStream(file2);
+			// isr 是以utf8读取文件流转换成字符流的对象
+            isr = new InputStreamReader(fis, StandardCharsets.UTF_8);
+            // osw 是以GBK编码字符流的对象
+            osw = new OutputStreamWriter(fos, "GBK");
+	// 以新的GBK编码写入
+            int len;
+            char[] buffer = new char[1024];
+            while (true){
+                try {
+                    if ((len = isr.read(buffer)) == -1) break;
+                    osw.write(buffer, 0, len);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+        } catch (FileNotFoundException | UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+    // 关闭资源
+        finally {
+                if(osw != null){
+                    try {
+                        osw.close();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+                if(isr != null){
+                    try {
+                        isr.close();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+                if(fis != null){
+                    try {
+                        fis.close();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+                if(fos != null){
+                    try {
+                        fos.close();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        }
+```
+
+
+
+*   提供了字节流和字符流之间的转换
+
+*   Java API 提供了两个转换流
+
+    InputStreanReader  --> 将InputStream 转换为Reader
+
+    OutputStreamWriter --> 将Write转换为OutputStream
+
+*   字节流中的数据都是字符时，转换成字符流操作效率更高
+
+*   使用转换流处理文件乱码问题；实现编码和转码的功能
+
+![转换流图示](/home/huangzheng2011/Projects/JavaProjects/Java/Java2018/notes/images/转换流图示.png)
+
+​	
+
+#### 标准输入、输出流
+
+![标准输入输出流](/home/huangzheng2011/Projects/JavaProjects/Java/Java2018/notes/images/标准输入输出流.png)
+
+```java
+// 练习：从键盘输入字符串，要求将读取到的整行字符串转换成大写输出。然后继续进行输入操作，直到输入'e'或者'exit'时，退出程序
+// 不使用 Scanner, 而是使用标准流方式实现
+// 通过转换流把标准输入转换成有readLine()方法的字符输入流
+public static void main(String[] args) {
+
+        BufferedReader br = null;
+        try {
+            // System.in 是一个标准的输入流，默认是键盘输入
+            InputStreamReader isr = new InputStreamReader(System.in);
+            br = new BufferedReader(isr);
+            while (true) {
+                System.out.print("输入： ");
+                String data = br.readLine();
+                if ("e".equalsIgnoreCase(data) || "exit".equalsIgnoreCase(data)) {
+                    System.out.println("程序结束");
+                    break;
+                } else {
+                    assert data != null;
+                    System.out.println(data.toUpperCase());
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (br != null) {
+                try {
+                    br.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+// 练习2:
+// 创建一个程序：MyInput.java
+// 其中包含从键盘输入的 int, double, float, boolean, short, byte, String 类型的值的方法
+// 不能使用 Scanner 方式, 功能相当于Scanner
+```
+
+
+
+​	
 
 ​			
 

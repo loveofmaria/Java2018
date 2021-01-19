@@ -442,9 +442,134 @@ public static void main(String[] args) {
 
 
 
-​	
+### 	对象流
 
-​			
+![对象流](/home/huangzheng2011/Projects/JavaProjects/Java/Java2018/notes/images/对象流.png)
+
+​			![对象的序列化](/home/huangzheng2011/Projects/JavaProjects/Java/Java2018/notes/images/day27网络编程/对象的序列化.png)
+
+***![对象的序列化2](/home/huangzheng2011/Projects/JavaProjects/Java/Java2018/notes/images/day27网络编程/对象的序列化2.png)***
+
+***代码示例：***
+
+```java
+// 序列化
+public void test1() {
+    ObjectOutputStream objectOutputStream = null;
+    try {
+        objectOutputStream = new ObjectOutputStream(new FileOutputStream("object.data"));
+        Person p = new Person("张飞", 33);
+        objectOutputStream.writeObject(p);
+        objectOutputStream.flush();
+    } catch (IOException e) {
+        e.printStackTrace();
+    } finally {
+        if (objectOutputStream != null) {
+            try {
+                objectOutputStream.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+// 反序列化
+public void test2() {
+    ObjectInputStream objectInputStream = null;
+    try {
+        objectInputStream = new ObjectInputStream(new FileInputStream("object.data"));
+        Object obj = objectInputStream.readObject();
+        Person p = (Person) obj;
+        System.out.println(p);
+    } catch (IOException | ClassNotFoundException e) {
+        e.printStackTrace();
+    } finally {
+        if (objectInputStream != null) {
+            try {
+                objectInputStream.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+// 一个类如果要支持序列化，必须实现两个接口中的一个「一般是实现serializable」：
+// 1. Serializable  [标识接口，没有任何需要实现的方法，仅仅是一个接口]
+// 2. Externalizabel
+class Person implements Serializable {
+    // 还需要有一个静态常量 serialVersionUID
+    // 自定义的一个long类型整数
+    public static final long serialVersionUID = 46578946543132L;
+    private String name;
+    private int age;
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public Person() {
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "<Person {" +
+                "\nName: " + name +
+                "\nAge: " + age +
+                "}>";
+    }
+}
+```
+
+
+
+### RandomAccessFile 类
+
+![RandomAccessFile](/home/huangzheng2011/Projects/JavaProjects/Java/Java2018/notes/images/day27网络编程/RandomAccessFile.png)
+
+![RandomAccessFile2](/home/huangzheng2011/Projects/JavaProjects/Java/Java2018/notes/images/day27网络编程/RandomAccessFile2.png)
+
+![RandomAccessFile3](/home/huangzheng2011/Projects/JavaProjects/Java/Java2018/notes/images/day27网络编程/RandomAccessFile3.png)
+
+
+
+### Java NIO
+
+![Java NIO](/home/huangzheng2011/Projects/JavaProjects/Java/Java2018/notes/images/day27网络编程/Java NIO.png)
+
+![NIO2](/home/huangzheng2011/Projects/JavaProjects/Java/Java2018/notes/images/day27网络编程/NIO2.png)
+
+![Path-Paths-Files核心API](/home/huangzheng2011/Projects/JavaProjects/Java/Java2018/notes/images/day27网络编程/Path-Paths-Files核心API.png)
+
+![2](/home/huangzheng2011/Projects/JavaProjects/Java/Java2018/notes/images/day27网络编程/2.png)
+
+![Path常用方法](/home/huangzheng2011/Projects/JavaProjects/Java/Java2018/notes/images/day27网络编程/Path常用方法.png)
+
+![Files类](/home/huangzheng2011/Projects/JavaProjects/Java/Java2018/notes/images/day27网络编程/Files类.png)
+
+![Files类2](/home/huangzheng2011/Projects/JavaProjects/Java/Java2018/notes/images/day27网络编程/Files类2.png)
+
+
+
+
 
 
 

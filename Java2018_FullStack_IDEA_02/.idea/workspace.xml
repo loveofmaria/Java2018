@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66bbe259-d78a-428b-ba12-69c06e53b38f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/day26_File/src/ObjectInputStreamTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day26_File/src/RandomAccessFileTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27_networkProgram/day27_networkProgram.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day27_networkProgram/src/NetworkProgramTestDemo1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../notes/day27_网络编程.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day26_File/count.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/day26_File/index.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/day26_File/text1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/day26_File/text_gbk.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../notes/day26_IO流.md" beforeDir="false" afterPath="$PROJECT_DIR$/../notes/day26_IO流.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day22_Enumeration&amp;annotation/day22_Enumeration&amp;annotation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/day22_Enumeration&amp;annotation/day22_Enumeration&amp;annotation.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day22_Enumeration&amp;annotation/src/EnumDemo1/EnumTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/day22_Enumeration&amp;annotation/src/EnumDemo1/EnumTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day26_File/day26_File.iml" beforeDir="false" afterPath="$PROJECT_DIR$/day26_File/day26_File.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day26_File/src/FileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/day26_File/src/FileTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,13 +64,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../AndroidProjects/FlutterProjects/helloworld" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -81,50 +82,61 @@
       <recent name="$PROJECT_DIR$/day26_File" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RandomAccessFileTest.test1">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.NetworkProgramTestDemo1.testClient">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OtherStreamTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="OtherStreamTest" />
-      <module name="day26_File" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ObjectInputStreamTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="day26_File" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ObjectInputStreamTest" />
-      <option name="METHOD_NAME" value="test1" />
+    <configuration name="EnumTest.testSeasons" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day22_Enumeration&amp;annotation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="EnumDemo1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="EnumDemo1" />
+      <option name="MAIN_CLASS_NAME" value="EnumDemo1.EnumTest" />
+      <option name="METHOD_NAME" value="testSeasons" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ObjectInputStreamTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="day26_File" />
+    <configuration name="NetworkProgramTestDemo1.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day27_networkProgram" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ObjectInputStreamTest" />
-      <option name="METHOD_NAME" value="test2" />
+      <option name="MAIN_CLASS_NAME" value="NetworkProgramTestDemo1" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OtherStreamTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="day26_File" />
+    <configuration name="NetworkProgramTestDemo1.testClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day27_networkProgram" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="OtherStreamTest" />
-      <option name="METHOD_NAME" value="test1" />
+      <option name="MAIN_CLASS_NAME" value="NetworkProgramTestDemo1" />
+      <option name="METHOD_NAME" value="testClient" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NetworkProgramTestDemo1.testServer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day27_networkProgram" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="NetworkProgramTestDemo1" />
+      <option name="METHOD_NAME" value="testServer" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -142,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.NetworkProgramTestDemo1.testClient" />
+        <item itemvalue="JUnit.NetworkProgramTestDemo1.testServer" />
+        <item itemvalue="JUnit.NetworkProgramTestDemo1.test" />
+        <item itemvalue="JUnit.EnumTest.testSeasons" />
         <item itemvalue="JUnit.RandomAccessFileTest.test1" />
-        <item itemvalue="JUnit.ObjectInputStreamTest.test2" />
-        <item itemvalue="JUnit.ObjectInputStreamTest.test1" />
-        <item itemvalue="Application.OtherStreamTest" />
-        <item itemvalue="JUnit.OtherStreamTest.test1" />
       </list>
     </recent_temporary>
   </component>
@@ -182,6 +194,7 @@
       <workItem from="1609722142193" duration="12866000" />
       <workItem from="1609768618405" duration="268000" />
       <workItem from="1609808625485" duration="12852000" />
+      <workItem from="1611280999276" duration="9027000" />
     </task>
     <servers />
   </component>

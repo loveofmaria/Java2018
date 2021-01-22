@@ -2,6 +2,7 @@ import org.junit.jupiter.api.Test;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Objects;
 
 public class FileTest {
     @Test
@@ -56,7 +57,7 @@ public class FileTest {
 
         File f = new File("files2");
         f.mkdirs();
-        System.out.println(f.listFiles().length);
+        System.out.println(Objects.requireNonNull(f.listFiles()).length);
 
         File f2 = new File("files2/a.txt");
         f2.createNewFile();
